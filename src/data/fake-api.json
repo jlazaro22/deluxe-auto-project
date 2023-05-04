@@ -1,0 +1,67 @@
+{
+	"mainNavBarItems": [
+		{
+			"name": "Veículos",
+			"url": "/cars-gallery"
+		},
+		{
+			"name": "Serviços",
+			"children": [
+				{
+					"name": "Soluções de Financiamento",
+					"url": "/services/credit-sim"
+				},
+				{
+					"name": "Avalie o seu veículo",
+					"url": "/services/market-value"
+				},
+				{
+					"name": "Garantia PósVenda",
+					"url": "/services/warranty"
+				}
+			]
+		},
+		{
+			"name": "Sobre Nós",
+			"url": "/about-us"
+		},
+		{
+			"name": "Contactos",
+			"url": "/contact-us"
+		}
+	],
+	"cars": [
+		{
+			"id": "1683207271563",
+			"brand": "Ferrari",
+			"model": "LaFerrari",
+			"year": "2013",
+			"chassis": {
+				"class": "Sports car (S)",
+				"body": "2-door coupé",
+				"weight": "1,585 kg"
+			},
+			"powertrain": {
+				"engine": "6.3 L F140 FE V12",
+				"powerOutput": "515 kW (700 PS; 690 hp)",
+				"transmission": "7-speed dual-clutch automatic"
+			}
+		},
+		{
+			"id": "1683207286606",
+			"brand": "Lamborghini ",
+			"model": "Aventador",
+			"year": "2011",
+			"chassis": {
+				"class": "Sports car (S)",
+				"body": "2-door coupé",
+				"weight": "1,575 kg"
+			},
+			"powertrain": {
+				"engine": "6.5 L L539 V12",
+				"powerOutput": "708 kW (950 hp; 963 PS)",
+				"transmission": "7-speed ISR Graziano automated manual"
+			}
+		}
+	]
+}
