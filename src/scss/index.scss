@@ -1,17 +1,17 @@
 /* Local Font */
 @font-face {
 	font-family: Galada-Regular;
-	src: url('../assets/fonts/galada-regular.ttf');
+	src: url('/fonts/galada-regular.ttf');
 }
 
 /* CSS reset */
-@import 'utilities/css-reset';
+@import './utilities/css-reset';
 
 /* CSS variables */
-@import 'shared/variables';
+@import './shared/variables';
 
 /* global styles */
-@import 'shared/global';
+@import './shared/global';
 
 /* main navigation */
-@import 'shared/main-navbar';
+@import './shared/main-navbar';
