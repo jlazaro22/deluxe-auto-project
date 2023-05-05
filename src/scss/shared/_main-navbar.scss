@@ -1,5 +1,144 @@
 nav.main-nav {
-	background: $bg-secondary; //temp
 	display: flex;
 	flex-direction: column;
+	// background-color: rgba(55, 65, 81, 0);
+	// transition: background-color ease-in-out 0.25s;
+
+	// &:hover {
+	// 	background-color: rgba(55, 65, 81, 0.7);
+
+	// 	& .nav-container .hamburger .meat {
+	// 		background: $bg-secondary;
+	// 	}
+	// }
+
+	& .nav-container {
+		padding: 10px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		& .logo {
+			font-family: $font-brand;
+			font-size: 1.25rem;
+			color: $color-secondary;
+			visibility: hidden;
+			opacity: 0;
+		}
+
+		& .hamburger {
+			position: relative;
+			width: 30px;
+			height: 20px;
+			cursor: pointer;
+			user-select: none;
+
+			.meat {
+				position: absolute;
+				width: 100%;
+				height: 4px;
+				display: block;
+				border-radius: 4px;
+				background: $bg-primary;
+				transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+				&:first-child {
+					top: 0;
+				}
+
+				&:nth-child(2),
+				&:nth-child(3) {
+					top: 50%;
+					transform: translateY(-50%);
+				}
+
+				&:last-child {
+					bottom: 0;
+				}
+			}
+
+			&.close {
+				.meat:first-child,
+				.meat:last-child {
+					opacity: 0;
+				}
+
+				.meat:first-child {
+					transform: translateY(20px) scale(0);
+				}
+
+				.meat:last-child {
+					transform: translateY(-20px) scale(0);
+				}
+
+				.meat:nth-child(2) {
+					transform: rotate(45deg);
+				}
+
+				.meat:nth-child(3) {
+					transform: rotate(-45deg);
+				}
+			}
+		}
+	}
+
+	& .menu {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		max-height: 0px;
+		overflow: hidden;
+		transition: max-height 0.6s ease-in-out;
+
+		&.active {
+			max-height: 500px;
+		}
+
+		& li {
+			position: relative;
+			font-weight: 500;
+			cursor: pointer;
+
+			& a,
+			& span {
+				height: 100%;
+				padding: 10px 20px;
+				display: flex;
+				justify-content: center; // to review
+				align-items: center;
+				gap: 4px;
+				color: $color-secondary;
+			}
+
+			& a:hover {
+				background: $bg-secondary;
+			}
+
+			& span svg {
+				transition: transform 0.3s ease-in-out;
+			}
+
+			& span.toggled {
+				svg {
+					transform: rotate(-180deg);
+				}
+
+				+ .sub-menu {
+					max-height: 500px;
+				}
+			}
+		}
+	}
+
+	.sub-menu {
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.5s ease-in-out;
+		z-index: 1;
+
+		& li a {
+			padding: 10px 40px;
+			font-weight: 400;
+		}
+	}
 }

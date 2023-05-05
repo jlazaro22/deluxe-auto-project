@@ -1,0 +1,64 @@
+/* Media Queries */
+
+// Mobile phones
+@media (min-width: 768px) {
+	nav.main-nav {
+		flex-direction: row;
+		justify-content: space-between;
+
+		& .hamburger {
+			display: none;
+		}
+
+		& .menu {
+			max-height: none;
+			flex-direction: row;
+			overflow: visible;
+
+			& li {
+				& a,
+				& span {
+					padding: 0 10px;
+				}
+
+				& span.toggled + .sub-menu {
+					max-height: 0;
+				}
+
+				&:hover .sub-menu,
+				&:hover span.toggled + .sub-menu {
+					max-height: 500px;
+				}
+			}
+
+			&.close .sub-menu {
+				display: none;
+			}
+		}
+	}
+
+	.sub-menu {
+		position: absolute;
+		left: -10px;
+		background: rgba(55, 65, 81, 0.7);
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+
+		& li a {
+			padding: 10px 20px;
+		}
+
+		// li:last-child a {
+		// 	border-bottom-left-radius: 5px;
+		// 	border-bottom-right-radius: 5px;
+		// }
+	}
+}
+
+// Tablets
+@media (min-width: 769px) and (max-width: 992px) {
+}
+
+// Desktop
+@media (min-width: 993px) {
+}
