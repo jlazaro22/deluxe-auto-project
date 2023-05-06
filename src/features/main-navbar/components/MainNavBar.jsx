@@ -6,16 +6,48 @@ import { useState } from 'react';
 export default function MainNavBar() {
 	const { mainNavBarItems } = useSelector((state) => state.mainNavBarItems);
 	const [toggled, setToggled] = useState(false);
+	const [closeSubMenu, setCloseSubMenu] = useState(false);
 
 	const toggleSubMenu = (event) => {
 		event.currentTarget.classList.toggle('toggled');
+	};
+
+	const screenSizes = {
+		small: 768,
+		medium: 992,
+		large: 993,
+	};
+
+	const closeMenu = (closeSubMenu = false) => {
+		setToggled(false);
+
+		if (closeSubMenu && window.innerWidth > screenSizes.small) {
+			setCloseSubMenu(true);
+			setTimeout(() => setCloseSubMenu(false), 0);
+		}
+	};
+
+	const renderChildren = (children) => {
+		return (
+			<ul className='sub-menu'>
+				{children.map((child, idx) => (
+					<li key={idx}>
+						<NavLink to={child.url} onClick={() => closeMenu(true)}>
+							{child.name}
+						</NavLink>
+					</li>
+				))}
+			</ul>
+		);
 	};
 
 	const renderItems = () => {
 		return mainNavBarItems.map((item, idx) => (
 			<li key={idx}>
 				{item.url ? (
-					<NavLink to={item.url}>{item.name}</NavLink>
+					<NavLink to={item.url} onClick={() => closeMenu()}>
+						{item.name}
+					</NavLink>
 				) : (
 					<span onClick={toggleSubMenu}>
 						{item.name}
@@ -27,21 +59,9 @@ export default function MainNavBar() {
 		));
 	};
 
-	const renderChildren = (children) => {
-		return (
-			<ul className='sub-menu'>
-				{children.map((child, idx) => (
-					<li key={idx}>
-						<NavLink to={child.url}>{child.name}</NavLink>
-					</li>
-				))}
-			</ul>
-		);
-	};
-
 	return (
 		<>
-			<nav className='main-nav'>
+			<nav className={`main-nav${toggled ? ' open' : ''}`}>
 				<div className='nav-container'>
 					<div className='logo'>Deluxe Auto</div>
 					<div
@@ -54,7 +74,13 @@ export default function MainNavBar() {
 						<span className='meat'></span>
 					</div>
 				</div>
-				<ul className={`menu${toggled ? ' active' : ''}`}>{renderItems()}</ul>
+				<ul
+					className={`menu${toggled ? ' open' : ''}${
+						closeSubMenu ? ' close' : ''
+					}`}
+				>
+					{renderItems()}
+				</ul>
 			</nav>
 		</>
 	);

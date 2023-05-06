@@ -29,6 +29,10 @@
 				&:hover span.toggled + .sub-menu {
 					max-height: 500px;
 				}
+
+				&:hover span svg {
+					transform: rotate(-180deg);
+				}
 			}
 
 			&.close .sub-menu {
@@ -40,15 +44,31 @@
 	.sub-menu {
 		position: absolute;
 		left: -10px;
-		background: rgba(55, 65, 81, 0.7);
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
 		border-bottom-left-radius: 5px;
 		border-bottom-right-radius: 5px;
+		background-color: $bg-primary;
+
+		& li {
+			margin: 8px 0;
+		}
+
+		& li:hover {
+			background-color: #445063;
+		}
 
 		& li a {
 			padding: 10px 20px;
+			color: $color-primary !important;
 		}
 
-		// li:last-child a {
+		// & li:first-child {
+		// 	border-top-left-radius: 5px;
+		// 	border-top-right-radius: 5px;
+		// }
+
+		// & li:last-child {
 		// 	border-bottom-left-radius: 5px;
 		// 	border-bottom-right-radius: 5px;
 		// }
