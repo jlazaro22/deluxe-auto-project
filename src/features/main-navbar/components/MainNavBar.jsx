@@ -12,16 +12,13 @@ export default function MainNavBar() {
 		event.currentTarget.classList.toggle('toggled');
 	};
 
-	const screenSizes = {
-		small: 768,
-		medium: 992,
-		large: 993,
-	};
-
-	const closeMenu = (closeSubMenu = false) => {
+	const closeMenu = (e, closeSubMenu = false) => {
 		setToggled(false);
 
-		if (closeSubMenu && window.innerWidth > screenSizes.small) {
+		if (closeSubMenu) {
+			e.target.parentElement.parentElement.previousElementSibling.classList.remove(
+				'toggled'
+			);
 			setCloseSubMenu(true);
 			setTimeout(() => setCloseSubMenu(false), 0);
 		}
@@ -32,7 +29,7 @@ export default function MainNavBar() {
 			<ul className='sub-menu'>
 				{children.map((child, idx) => (
 					<li key={idx}>
-						<NavLink to={child.url} onClick={() => closeMenu(true)}>
+						<NavLink to={child.url} onClick={(e) => closeMenu(e, true)}>
 							{child.name}
 						</NavLink>
 					</li>
@@ -45,7 +42,7 @@ export default function MainNavBar() {
 		return mainNavBarItems.map((item, idx) => (
 			<li key={idx}>
 				{item.url ? (
-					<NavLink to={item.url} onClick={() => closeMenu()}>
+					<NavLink to={item.url} onClick={(e) => closeMenu(e)}>
 						{item.name}
 					</NavLink>
 				) : (
