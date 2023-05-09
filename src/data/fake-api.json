@@ -36,6 +36,7 @@
 			"brand": "Ferrari",
 			"model": "LaFerrari",
 			"year": "2013",
+			"highlighted": true,
 			"chassis": {
 				"class": "Sports car (S)",
 				"body": "2-door coupé",
@@ -52,6 +53,7 @@
 			"brand": "Lamborghini ",
 			"model": "Aventador",
 			"year": "2011",
+			"highlighted": false,
 			"chassis": {
 				"class": "Sports car (S)",
 				"body": "2-door coupé",
