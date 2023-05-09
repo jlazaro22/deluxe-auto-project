@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getMainNavBarItems } from '../mainNavbarItemsSlice';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { IoChevronDownOutline } from 'react-icons/io5';
 
 export default function MainNavBar() {
@@ -66,7 +66,9 @@ export default function MainNavBar() {
 		<>
 			<nav className={`main-nav${toggled ? ' open' : ''}`}>
 				<div className='nav-container'>
-					<div className='logo'>Deluxe Auto</div>
+					<Link to={'/'} className='logo'>
+						Deluxe Auto
+					</Link>
 					<div
 						className={`hamburger${toggled ? ' close' : ''}`}
 						onClick={() => setToggled(!toggled)}

@@ -1,10 +1,14 @@
 /* Media Queries */
 
-// Mobile phones
-@media (min-width: 768px) {
+// MainNavBar styles for Tablets and Desktop
+@media (min-width: 769px) {
 	nav.main-nav {
 		flex-direction: row;
 		justify-content: space-between;
+
+		& .nav-container {
+			padding: 10px 20px;
+		}
 
 		& .nav-container .logo {
 			visibility: hidden;
@@ -17,10 +21,16 @@
 
 		& .menu {
 			max-height: none;
+			padding-top: 40px;
 			flex-direction: row;
 			overflow: visible;
 
 			& li {
+				& a,
+				& span {
+					padding: 5px 10px;
+				}
+
 				& a:active,
 				& span:active,
 				& a:hover,
@@ -34,6 +44,12 @@
 				& span:active {
 					color: $color-primary;
 					text-shadow: none;
+				}
+
+				& a:active,
+				& a.active {
+					background-color: rgba(55, 65, 81, 0.5);
+					border-radius: 16px;
 				}
 			}
 		}
@@ -54,10 +70,89 @@
 	}
 }
 
+// Mobile phones
+@media (max-width: 768px) {
+	.container {
+		padding: $padding-mobile;
+	}
+
+	.main-header {
+		& .main-nav {
+			padding: 0 4%;
+		}
+
+		& .page-logo {
+			left: 4%;
+		}
+	}
+
+	div.main-banner {
+		background-image: url('/images/pictures/main-banner_768x432.jpg');
+	}
+}
+
 // Tablets
 @media (min-width: 769px) and (max-width: 992px) {
+	.container {
+		padding: $padding-tablet;
+	}
+
+	.main-header {
+		& .main-nav {
+			padding: 0 6%;
+		}
+
+		& .page-logo {
+			width: 140px;
+			height: 140px;
+			left: 6%;
+			display: block;
+		}
+	}
+
+	div.main-banner {
+		height: 100vh;
+		background-image: url('/images/pictures/main-banner_1980x1114.jpg');
+
+		& .main-banner-title {
+			margin-top: 16rem;
+
+			& h1 {
+				font-size: 2.5rem;
+			}
+		}
+	}
 }
 
 // Desktop
 @media (min-width: 993px) {
+	.container {
+		padding: $padding-desktop;
+	}
+
+	.main-header {
+		& .main-nav {
+			padding: 0 8%;
+		}
+
+		& .page-logo {
+			width: 160px;
+			height: 160px;
+			left: 8%;
+			display: block;
+		}
+	}
+
+	div.main-banner {
+		height: 100vh;
+		background-image: url('/images/pictures/main-banner_4096x2304.jpg');
+
+		& .main-banner-title {
+			margin-top: 16rem;
+
+			& h1 {
+				font-size: 2.5rem;
+			}
+		}
+	}
 }

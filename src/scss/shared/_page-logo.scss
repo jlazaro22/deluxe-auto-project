@@ -1,0 +1,11 @@
+.main-header {
+	& .page-logo {
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		top: 1rem;
+		z-index: 5;
+
+		display: none;
+	}
+}
