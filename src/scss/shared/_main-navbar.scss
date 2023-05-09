@@ -41,8 +41,6 @@ nav.main-nav {
 			font-size: 1.25rem;
 			color: $color-secondary;
 			text-shadow: $shadow;
-			// visibility: hidden;
-			// opacity: 0;
 		}
 
 		& .hamburger {
@@ -119,7 +117,6 @@ nav.main-nav {
 		}
 
 		& li {
-			// position: relative;
 			font-weight: 500;
 			text-shadow: $shadow;
 			cursor: pointer;

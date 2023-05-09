@@ -44,6 +44,10 @@
 		right: 0;
 		display: flex;
 
+		& li {
+			font-size: 0.85rem;
+		}
+
 		& li:hover {
 			font-weight: 700;
 		}
