@@ -22,6 +22,8 @@
 		& .menu {
 			max-height: none;
 			padding-top: 40px;
+			// padding: 20px;
+			// background-color: rgba(55, 65, 81, 0.5);
 			flex-direction: row;
 			overflow: visible;
 
@@ -70,7 +72,7 @@
 	}
 }
 
-// Mobile phones
+// small screens
 @media (max-width: 768px) {
 	.container {
 		padding: $padding-mobile;
@@ -91,7 +93,7 @@
 	}
 }
 
-// Tablets
+// medium screens
 @media (min-width: 769px) and (max-width: 992px) {
 	.container {
 		padding: $padding-tablet;
@@ -122,9 +124,17 @@
 			}
 		}
 	}
+
+	article.search-tool {
+		& .search-tool-form {
+			& .form-control {
+				flex: 1 1 260px;
+			}
+		}
+	}
 }
 
-// Desktop
+// big screens
 @media (min-width: 993px) {
 	.container {
 		padding: $padding-desktop;
@@ -152,6 +162,14 @@
 
 			& h1 {
 				font-size: 2.5rem;
+			}
+		}
+	}
+
+	article.search-tool {
+		& .search-tool-form {
+			& .form-control {
+				flex: 1 1 160px;
 			}
 		}
 	}
