@@ -5,6 +5,7 @@ const apiUrl = `${import.meta.env.VITE_API_URL}/cars`;
 
 const initialState = {
   cars: [],
+  highlights: [],
   filteredCars: [],
   loading: false,
 };
