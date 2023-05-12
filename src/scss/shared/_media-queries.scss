@@ -95,8 +95,36 @@
 
 // medium screens
 @media (min-width: 769px) and (max-width: 992px) {
+	article {
+		margin-bottom: 25px;
+	}
+
 	.container {
 		padding: $padding-tablet;
+	}
+
+	h1:not(.main-banner-title h1) {
+		font-size: 1.5rem;
+	}
+
+	h2:not(.main-banner-title h1) {
+		font-size: 1.4rem;
+	}
+
+	h3:not(.main-banner-title h1) {
+		font-size: 1.3rem;
+	}
+
+	h4:not(.main-banner-title h1) {
+		font-size: 1.2rem;
+	}
+
+	h5:not(.main-banner-title h1) {
+		font-size: 1.1rem;
+	}
+
+	h6:not(.main-banner-title h1) {
+		font-size: 1rem;
 	}
 
 	.main-header {
@@ -136,8 +164,36 @@
 
 // big screens
 @media (min-width: 993px) {
+	article {
+		margin-bottom: 30px;
+	}
+
 	.container {
 		padding: $padding-desktop;
+	}
+
+	h1:not(.main-banner-title h1) {
+		font-size: 1.6rem;
+	}
+
+	h2:not(.main-banner-title h1) {
+		font-size: 1.5rem;
+	}
+
+	h3:not(.main-banner-title h1) {
+		font-size: 1.4rem;
+	}
+
+	h4:not(.main-banner-title h1) {
+		font-size: 1.3rem;
+	}
+
+	h5:not(.main-banner-title h1) {
+		font-size: 1.2rem;
+	}
+
+	h6:not(.main-banner-title h1) {
+		font-size: 1.1rem;
 	}
 
 	.main-header {
@@ -166,7 +222,17 @@
 		}
 	}
 
+	section.highlights {
+		flex-direction: row;
+		gap: 40px;
+	}
+
+	article.gallery {
+		flex: 2;
+	}
+
 	article.search-tool {
+		flex: 1;
 		& .search-tool-form {
 			& .form-control {
 				flex: 1 1 160px;

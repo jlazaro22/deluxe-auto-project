@@ -32,7 +32,11 @@ const carsGallerySlice = createSlice({
       .addCase(getCars.fulfilled, (state, action) => {
         state.loading = false;
         state.cars = action.payload;
-        console.log(state.cars);
+        state.highlights = state.cars.filter(car => car.highlighted === true);
+      })
+      .addCase(getCars.rejected, (state, action) => {
+        state.loading = false;
+        console.error('Error getting cars stock:', action.error.message);
       });
   }
 });

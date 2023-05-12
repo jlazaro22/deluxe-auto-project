@@ -34,12 +34,12 @@
 		{
 			"id": "1683207271563",
 			"brand": "Ferrari",
+			"brandLogo": "ferrari-logo.png",
 			"model": "LaFerrari",
 			"year": "2013",
 			"kms": "24000",
 			"price": "3100000",
 			"highlighted": false,
-			"brandLogo": "",
 			"imageUrl": "ferrari-laferrari.jpg",
 			"chassis": {
 				"class": "Sports car (S)",
@@ -55,12 +55,12 @@
 		{
 			"id": "1683207286606",
 			"brand": "Lamborghini ",
+			"brandLogo": "lamborghini-logo.png",
 			"model": "Aventador",
 			"year": "2011",
 			"kms": "32000",
 			"price": "820000",
 			"highlighted": false,
-			"brandLogo": "",
 			"imageUrl": "lamborghini-aventador.jpg",
 			"chassis": {
 				"class": "Sports car (S)",
@@ -74,14 +74,35 @@
 			}
 		},
 		{
+			"id": "1683888069246",
+			"brand": "Bugatti ",
+			"brandLogo": "bugatti-logo.png",
+			"model": "Chiron",
+			"year": "2016",
+			"kms": "7500",
+			"price": "2600000",
+			"highlighted": false,
+			"imageUrl": "bugatti-chiron.jpg",
+			"chassis": {
+				"class": "Sports car (S)",
+				"body": "2-door coupé",
+				"weight": "1,996 kg"
+			},
+			"powertrain": {
+				"engine": "8.0 L quad-turbocharged WR16",
+				"powerOutput": "1,103 kW (1,500 PS; 1,479 hp)",
+				"transmission": "7-speed dual-clutch automatic"
+			}
+		},
+		{
 			"id": "1683809449424",
 			"brand": "Ferrari",
+			"brandLogo": "ferrari-logo.png",
 			"model": "488 GTB",
 			"year": "2015",
 			"kms": "14000",
 			"price": "260000",
 			"highlighted": true,
-			"brandLogo": "",
 			"imageUrl": "ferrari-488-gtb.jpg",
 			"chassis": {
 				"class": "Sports car (S)",
@@ -97,12 +118,12 @@
 		{
 			"id": "1683818276230",
 			"brand": "Lamborghini",
+			"brandLogo": "ferrari-logo.png",
 			"model": "Huracán",
 			"year": "2014",
 			"kms": "47000",
 			"price": "300000",
 			"highlighted": true,
-			"brandLogo": "",
 			"imageUrl": "lamborghini-huracan.jpg",
 			"chassis": {
 				"class": "Sports car (S)",
@@ -118,12 +139,12 @@
 		{
 			"id": "1683818685452",
 			"brand": "Porsche",
+			"brandLogo": "porsche-logo.png",
 			"model": "992 Carrera 4S",
 			"year": "2019",
 			"kms": "81000",
 			"price": "125000",
 			"highlighted": true,
-			"brandLogo": "",
 			"imageUrl": "porsche-992.jpg",
 			"chassis": {
 				"class": "Sports car (S)",
@@ -139,12 +160,12 @@
 		{
 			"id": "1683819394409",
 			"brand": "Maserati",
+			"brandLogo": "maserati-logo.png",
 			"model": "GranTurismo",
 			"year": "2018",
 			"kms": "64000",
 			"price": "170000",
 			"highlighted": true,
-			"brandLogo": "",
 			"imageUrl": "maseratti-gran-turismo.jpg",
 			"chassis": {
 				"class": "Grand tourer (S)",
@@ -160,12 +181,12 @@
 		{
 			"id": "1683819766372",
 			"brand": "Mercedes-AMG",
+			"brandLogo": "mercedes-benz-logo.png",
 			"model": "AMG GT",
 			"year": "2022",
 			"kms": "46000",
 			"price": "325000",
 			"highlighted": true,
-			"brandLogo": "",
 			"imageUrl": "mercedesbenz-gt-amg.jpg",
 			"chassis": {
 				"class": "Grand tourer (S)",
@@ -181,12 +202,12 @@
 		{
 			"id": "1683820086719",
 			"brand": "Lotus Cars",
+			"brandLogo": "lotus-logo.png",
 			"model": "Lotus Evora 400",
 			"year": "2021",
 			"kms": "9500",
 			"price": "80000",
 			"highlighted": true,
-			"brandLogo": "",
 			"imageUrl": "lotus-evora-400.jpg",
 			"chassis": {
 				"class": "Sports car (S)",

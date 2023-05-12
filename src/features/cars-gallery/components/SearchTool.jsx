@@ -1,18 +1,10 @@
-import { useEffect, useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { getCars } from '../carsGallerySlice';
+import { useState } from 'react';
 import Button from '../../UI/Button';
 
 export default function SearchTool() {
-	let dispatch = useDispatch();
 	const [price, setPrice] = useState('');
 	let minPrice = '40000';
 	let maxPrice = '900000';
-
-	useEffect(() => {
-		dispatch(getCars());
-		// setPrice(maxPrice);
-	}, []);
 
 	return (
 		<article className='search-tool'>
@@ -74,7 +66,7 @@ export default function SearchTool() {
 						onChange={({ target: { value } }) => setPrice(value)}
 					/>
 				</div>
-				<Button type='submit'>Pesquisar Veículos</Button>
+				<Button>Pesquisar Veículos</Button>
 			</form>
 		</article>
 	);

@@ -1,18 +1,12 @@
-import { useEffect, useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { getMainNavBarItems } from '../mainNavbarItemsSlice';
+import { useState } from 'react';
+import { useSelector } from 'react-redux';
 import { NavLink, Link } from 'react-router-dom';
 import { IoChevronDownOutline } from 'react-icons/io5';
 
 export default function MainNavBar() {
 	const { mainNavBarItems } = useSelector((state) => state.mainNavBarItems);
-	let dispatch = useDispatch();
 	const [toggled, setToggled] = useState(false);
 	const [closeSubMenu, setCloseSubMenu] = useState(false);
-
-	useEffect(() => {
-		dispatch(getMainNavBarItems());
-	}, [dispatch]);
 
 	const toggleSubMenu = (event) => {
 		event.currentTarget.classList.toggle('toggled');

@@ -1,59 +1,32 @@
+import { useSelector } from 'react-redux';
 import Card from '../../../features/UI/Card';
+import LoaderCircle from '../../../features/UI/LoaderCircle';
+import HighlightedCar from './HighlightedCar';
 
 export default function HighlightsGallery() {
-	return (
-		<article className='gallery'>
+	const { highlights, loading } = useSelector((state) => state.cars);
+
+	const loaderCircle = (
+		<>
+			<h1>Destaques</h1>
+			<LoaderCircle />
+		</>
+	);
+
+	const carsRender = (
+		<>
 			<h1>Destaques</h1>
 			<div className='gallery-wrapper'>
-				<Card>
-					<img
-						src={`${
-							import.meta.env.VITE_BASE_URL
-						}/images/pictures/cars/ferrari-488-gtb.jpg`}
-						alt='car photo'
-					/>
-				</Card>
-				<Card>
-					<img
-						src={`${
-							import.meta.env.VITE_BASE_URL
-						}/images/pictures/cars/ferrari-488-gtb.jpg`}
-						alt='car photo'
-					/>
-				</Card>
-				<Card>
-					<img
-						src={`${
-							import.meta.env.VITE_BASE_URL
-						}/images/pictures/cars/ferrari-488-gtb.jpg`}
-						alt='car photo'
-					/>
-				</Card>
-				<Card>
-					<img
-						src={`${
-							import.meta.env.VITE_BASE_URL
-						}/images/pictures/cars/ferrari-488-gtb.jpg`}
-						alt='car photo'
-					/>
-				</Card>
-				<Card>
-					<img
-						src={`${
-							import.meta.env.VITE_BASE_URL
-						}/images/pictures/cars/ferrari-488-gtb.jpg`}
-						alt='car photo'
-					/>
-				</Card>
-				<Card>
-					<img
-						src={`${
-							import.meta.env.VITE_BASE_URL
-						}/images/pictures/cars/ferrari-488-gtb.jpg`}
-						alt='car photo'
-					/>
-				</Card>
+				{highlights.map((car) => (
+					<Card key={car.id}>
+						<HighlightedCar car={car} />
+					</Card>
+				))}
 			</div>
-		</article>
+		</>
+	);
+
+	return (
+		<article className='gallery'>{loading ? loaderCircle : carsRender}</article>
 	);
 }

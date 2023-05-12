@@ -19,6 +19,7 @@ article.search-tool {
 			& label {
 				margin-bottom: 8px;
 				display: block;
+				text-shadow: $shadow-text;
 			}
 
 			& select,
@@ -26,6 +27,8 @@ article.search-tool {
 				width: 100%;
 				padding: 12px;
 				border-radius: 8px;
+				outline-color: $color-secondary;
+				box-shadow: $shadow-box;
 			}
 		}
 
@@ -43,6 +46,7 @@ article.search-tool {
 				position: relative;
 				display: block;
 				background-color: transparent;
+				box-shadow: none;
 				cursor: pointer;
 
 				&::-webkit-slider-runnable-track {
@@ -50,6 +54,7 @@ article.search-tool {
 					height: 8px;
 					border-radius: 8px;
 					background-color: $bg-secondary;
+					box-shadow: $shadow-box;
 				}
 
 				&::-moz-range-track {
@@ -57,6 +62,7 @@ article.search-tool {
 					height: 8px;
 					border-radius: 8px;
 					background-color: $bg-secondary;
+					box-shadow: $shadow-box;
 				}
 
 				&::-ms-track {
@@ -64,6 +70,7 @@ article.search-tool {
 					height: 8px;
 					border-radius: 8px;
 					background-color: $bg-secondary;
+					box-shadow: $shadow-box;
 				}
 
 				&::-webkit-slider-thumb {
@@ -75,12 +82,14 @@ article.search-tool {
 					border-radius: 50%;
 					background-color: #fff;
 					transition: all 0.3s ease-in-out;
+					box-shadow: $shadow-box;
 					cursor: ew-resize;
 				}
 
 				&:active::-webkit-slider-thumb {
 					background-color: $bg-primary;
 					border: 3px solid $bg-secondary;
+					box-shadow: $shadow-box;
 				}
 
 				&::-moz-range-thumb {
@@ -92,6 +101,7 @@ article.search-tool {
 					border-radius: 50%;
 					background-color: #fff;
 					transition: all 0.3s ease-in-out;
+					box-shadow: $shadow-box;
 					cursor: ew-resize;
 				}
 
