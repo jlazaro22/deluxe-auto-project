@@ -39,6 +39,7 @@
 			"kms": "24000",
 			"price": "3100000",
 			"highlighted": false,
+			"brandLogo": "",
 			"imageUrl": "ferrari-laferrari.jpg",
 			"chassis": {
 				"class": "Sports car (S)",
@@ -59,6 +60,7 @@
 			"kms": "32000",
 			"price": "820000",
 			"highlighted": false,
+			"brandLogo": "",
 			"imageUrl": "lamborghini-aventador.jpg",
 			"chassis": {
 				"class": "Sports car (S)",
@@ -79,6 +81,7 @@
 			"kms": "14000",
 			"price": "260000",
 			"highlighted": true,
+			"brandLogo": "",
 			"imageUrl": "ferrari-488-gtb.jpg",
 			"chassis": {
 				"class": "Sports car (S)",
@@ -99,6 +102,7 @@
 			"kms": "47000",
 			"price": "300000",
 			"highlighted": true,
+			"brandLogo": "",
 			"imageUrl": "lamborghini-huracan.jpg",
 			"chassis": {
 				"class": "Sports car (S)",
@@ -119,6 +123,7 @@
 			"kms": "81000",
 			"price": "125000",
 			"highlighted": true,
+			"brandLogo": "",
 			"imageUrl": "porsche-992.jpg",
 			"chassis": {
 				"class": "Sports car (S)",
@@ -139,6 +144,7 @@
 			"kms": "64000",
 			"price": "170000",
 			"highlighted": true,
+			"brandLogo": "",
 			"imageUrl": "maseratti-gran-turismo.jpg",
 			"chassis": {
 				"class": "Grand tourer (S)",
@@ -159,6 +165,7 @@
 			"kms": "46000",
 			"price": "325000",
 			"highlighted": true,
+			"brandLogo": "",
 			"imageUrl": "mercedesbenz-gt-amg.jpg",
 			"chassis": {
 				"class": "Grand tourer (S)",
@@ -179,6 +186,7 @@
 			"kms": "9500",
 			"price": "80000",
 			"highlighted": true,
+			"brandLogo": "",
 			"imageUrl": "lotus-evora-400.jpg",
 			"chassis": {
 				"class": "Sports car (S)",

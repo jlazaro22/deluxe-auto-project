@@ -6,22 +6,52 @@ export default function HighlightsGallery() {
 			<h1>Destaques</h1>
 			<div className='gallery-wrapper'>
 				<Card>
-					<img src='/public/cars/ferrari-488-gtb.jpg' alt='car photo' />
+					<img
+						src={`${
+							import.meta.env.VITE_BASE_URL
+						}/images/pictures/cars/ferrari-488-gtb.jpg`}
+						alt='car photo'
+					/>
 				</Card>
 				<Card>
-					<img src='/public/cars/ferrari-488-gtb.jpg' alt='car photo' />
+					<img
+						src={`${
+							import.meta.env.VITE_BASE_URL
+						}/images/pictures/cars/ferrari-488-gtb.jpg`}
+						alt='car photo'
+					/>
 				</Card>
 				<Card>
-					<img src='/public/cars/ferrari-488-gtb.jpg' alt='car photo' />
+					<img
+						src={`${
+							import.meta.env.VITE_BASE_URL
+						}/images/pictures/cars/ferrari-488-gtb.jpg`}
+						alt='car photo'
+					/>
 				</Card>
 				<Card>
-					<img src='/public/cars/ferrari-488-gtb.jpg' alt='car photo' />
+					<img
+						src={`${
+							import.meta.env.VITE_BASE_URL
+						}/images/pictures/cars/ferrari-488-gtb.jpg`}
+						alt='car photo'
+					/>
 				</Card>
 				<Card>
-					<img src='/public/cars/ferrari-488-gtb.jpg' alt='car photo' />
+					<img
+						src={`${
+							import.meta.env.VITE_BASE_URL
+						}/images/pictures/cars/ferrari-488-gtb.jpg`}
+						alt='car photo'
+					/>
 				</Card>
 				<Card>
-					<img src='/public/cars/ferrari-488-gtb.jpg' alt='car photo' />
+					<img
+						src={`${
+							import.meta.env.VITE_BASE_URL
+						}/images/pictures/cars/ferrari-488-gtb.jpg`}
+						alt='car photo'
+					/>
 				</Card>
 			</div>
 		</article>
