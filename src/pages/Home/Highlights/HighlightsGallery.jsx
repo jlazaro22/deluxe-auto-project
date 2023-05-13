@@ -13,7 +13,7 @@ export default function HighlightsGallery() {
 		</>
 	);
 
-	const carsRender = (
+	const carsList = (
 		<>
 			<h1>Destaques</h1>
 			<div className='gallery-wrapper'>
@@ -27,6 +27,6 @@ export default function HighlightsGallery() {
 	);
 
 	return (
-		<article className='gallery'>{loading ? loaderCircle : carsRender}</article>
+		<article className='gallery'>{loading ? loaderCircle : carsList}</article>
 	);
 }

@@ -37,7 +37,7 @@ h3:not(.main-banner-title h1),
 h4:not(.main-banner-title h1),
 h5:not(.main-banner-title h1),
 h6:not(.main-banner-title h1) {
-	margin-bottom: 1rem;
+	margin-bottom: 1.5rem;
 	position: relative;
 	display: inline-block;
 	font-weight: 600;
@@ -124,6 +124,7 @@ button.btn:focus {
 	outline: none;
 }
 
+/* Cards */
 div.card {
 	position: relative;
 	border: 1px solid $color-secondary;
@@ -133,6 +134,7 @@ div.card {
 	overflow: hidden;
 
 	& div.info-wrapper {
+		width: 100%;
 		position: absolute;
 		top: 4px;
 		right: 0;
@@ -158,8 +160,7 @@ div.card {
 }
 
 .temp {
-	background-color: aquamarine;
-	color: white;
+	background-color: salmon;
 }
 
 //Circle loading animation

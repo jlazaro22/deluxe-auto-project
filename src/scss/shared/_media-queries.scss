@@ -22,8 +22,6 @@
 		& .menu {
 			max-height: none;
 			padding-top: 40px;
-			// padding: 20px;
-			// background-color: rgba(55, 65, 81, 0.5);
 			flex-direction: row;
 			overflow: visible;
 
@@ -133,8 +131,8 @@
 		}
 
 		& .page-logo {
-			width: 140px;
-			height: 140px;
+			width: 180px;
+			height: 180px;
 			left: 6%;
 			display: block;
 		}
@@ -149,14 +147,6 @@
 
 			& h1 {
 				font-size: 2.5rem;
-			}
-		}
-	}
-
-	article.search-tool {
-		& .search-tool-form {
-			& .form-control {
-				flex: 1 1 260px;
 			}
 		}
 	}
@@ -202,8 +192,8 @@
 		}
 
 		& .page-logo {
-			width: 160px;
-			height: 160px;
+			width: 200px;
+			height: 200px;
 			left: 8%;
 			display: block;
 		}
@@ -221,21 +211,30 @@
 			}
 		}
 	}
+}
 
+// bigger screens - gallery grid layout 2col
+@media (min-width: 1200px) {
 	section.highlights {
-		flex-direction: row;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
 		gap: 40px;
-	}
 
-	article.gallery {
-		flex: 2;
-	}
+		& article.gallery {
+			& div.gallery-wrapper {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+				gap: 10px;
+			}
+		}
 
-	article.search-tool {
-		flex: 1;
-		& .search-tool-form {
-			& .form-control {
-				flex: 1 1 160px;
+		& article.search-tool {
+			& .search-tool-form {
+				& .filters {
+					& .form-control {
+						flex: 1 1 240px;
+					}
+				}
 			}
 		}
 	}
