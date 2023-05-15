@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import pageLogo from '/images/pictures/page-logo.svg';
+import pageLogo from '/images/pictures/page-logo/page-logo.svg';
 
 export default function PageLogo() {
 	return (

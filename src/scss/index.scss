@@ -13,10 +13,14 @@
 /* global styles */
 @import './shared/global';
 
-/* Main Header */
+/* main header */
 @import './shared/main-header';
 
-/* pages... */
+/* home page */
+@import './pages/home/home';
+
+/* cars-gallery page */
+@import './pages/cars-gallery/cars-gallery';
 
 /* media queries */
 @import './shared/media-queries';

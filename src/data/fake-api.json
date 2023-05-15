@@ -34,8 +34,13 @@
 		{
 			"id": "1683207271563",
 			"brand": "Ferrari",
+			"brandLogo": "ferrari-logo.png",
 			"model": "LaFerrari",
 			"year": "2013",
+			"kms": "24000",
+			"price": "3100000",
+			"highlighted": false,
+			"imageUrl": "ferrari-laferrari.jpg",
 			"chassis": {
 				"class": "Sports car (S)",
 				"body": "2-door coupé",
@@ -43,15 +48,20 @@
 			},
 			"powertrain": {
 				"engine": "6.3 L F140 FE V12",
-				"powerOutput": "515 kW (700 PS; 690 hp)",
+				"powerOutput": "708 kW (950 hp; 963 PS)",
 				"transmission": "7-speed dual-clutch automatic"
 			}
 		},
 		{
 			"id": "1683207286606",
-			"brand": "Lamborghini ",
+			"brand": "Lamborghini",
+			"brandLogo": "lamborghini-logo.png",
 			"model": "Aventador",
 			"year": "2011",
+			"kms": "32000",
+			"price": "820000",
+			"highlighted": false,
+			"imageUrl": "lamborghini-aventador.jpg",
 			"chassis": {
 				"class": "Sports car (S)",
 				"body": "2-door coupé",
@@ -59,8 +69,155 @@
 			},
 			"powertrain": {
 				"engine": "6.5 L L539 V12",
-				"powerOutput": "708 kW (950 hp; 963 PS)",
+				"powerOutput": "515 kW (700 PS; 690 hp)",
 				"transmission": "7-speed ISR Graziano automated manual"
+			}
+		},
+		{
+			"id": "1683888069246",
+			"brand": "Bugatti",
+			"brandLogo": "bugatti-logo.png",
+			"model": "Chiron",
+			"year": "2016",
+			"kms": "7500",
+			"price": "2600000",
+			"highlighted": false,
+			"imageUrl": "bugatti-chiron.jpg",
+			"chassis": {
+				"class": "Sports car (S)",
+				"body": "2-door coupé",
+				"weight": "1,996 kg"
+			},
+			"powertrain": {
+				"engine": "8.0 L quad-turbocharged WR16",
+				"powerOutput": "1,103 kW (1,500 PS; 1,479 hp)",
+				"transmission": "7-speed dual-clutch automatic"
+			}
+		},
+		{
+			"id": "1683809449424",
+			"brand": "Ferrari",
+			"brandLogo": "ferrari-logo.png",
+			"model": "488 GTB",
+			"year": "2015",
+			"kms": "14000",
+			"price": "260000",
+			"highlighted": true,
+			"imageUrl": "ferrari-488-gtb.jpg",
+			"chassis": {
+				"class": "Sports car (S)",
+				"body": "2-door berlinetta",
+				"weight": "1,470 kg"
+			},
+			"powertrain": {
+				"engine": "3.9 L F154 CB twin-turbocharged V8",
+				"powerOutput": "493 kW (670 PS; 661 hp)",
+				"transmission": "7-speed dual-clutch"
+			}
+		},
+		{
+			"id": "1683818276230",
+			"brand": "Lamborghini",
+			"brandLogo": "lamborghini-logo.png",
+			"model": "Huracán",
+			"year": "2014",
+			"kms": "47000",
+			"price": "300000",
+			"highlighted": true,
+			"imageUrl": "lamborghini-huracan.jpg",
+			"chassis": {
+				"class": "Sports car (S)",
+				"body": "2-door coupé",
+				"weight": "1,542 kg"
+			},
+			"powertrain": {
+				"engine": "5.2 L odd-firing V10",
+				"powerOutput": "449 kW (610 PS; 602 hp)",
+				"transmission": "7-speed dual-clutch"
+			}
+		},
+		{
+			"id": "1683818685452",
+			"brand": "Porsche",
+			"brandLogo": "porsche-logo.png",
+			"model": "992 Carrera 4S",
+			"year": "2019",
+			"kms": "81000",
+			"price": "125000",
+			"highlighted": true,
+			"imageUrl": "porsche-992.jpg",
+			"chassis": {
+				"class": "Sports car (S)",
+				"body": "2-door coupé",
+				"weight": "1,710 kg"
+			},
+			"powertrain": {
+				"engine": "4.0 L naturally aspirated flat-6",
+				"powerOutput": "331 kW (450 PS; 444 hp)",
+				"transmission": "8-speed PDK"
+			}
+		},
+		{
+			"id": "1683819394409",
+			"brand": "Maserati",
+			"brandLogo": "maserati-logo.png",
+			"model": "GranTurismo",
+			"year": "2018",
+			"kms": "64000",
+			"price": "170000",
+			"highlighted": true,
+			"imageUrl": "maseratti-gran-turismo.jpg",
+			"chassis": {
+				"class": "Grand tourer (S)",
+				"body": "2-door 2+2 coupé",
+				"weight": "1,880 kg"
+			},
+			"powertrain": {
+				"engine": "4.7 L Ferrari/Maserati F136 Y V8",
+				"powerOutput": "298 kW (405 PS; 399 hp)",
+				"transmission": "6-speed Graziano MC-Shift automated manual"
+			}
+		},
+		{
+			"id": "1683819766372",
+			"brand": "Mercedes-AMG",
+			"brandLogo": "mercedes-benz-logo.png",
+			"model": "AMG GT",
+			"year": "2022",
+			"kms": "46000",
+			"price": "325000",
+			"highlighted": true,
+			"imageUrl": "mercedesbenz-gt-amg.jpg",
+			"chassis": {
+				"class": "Grand tourer (S)",
+				"body": "2-door liftback/fastback coupé",
+				"weight": "1,645 kg"
+			},
+			"powertrain": {
+				"engine": "6.2 L M159 DOHC V8 (AMG GT3)",
+				"powerOutput": "539.7 kW (733.8 PS; 723.7 hp)",
+				"transmission": "7-speed AMG SPEEDSHIFT DCT dual-clutch"
+			}
+		},
+		{
+			"id": "1683820086719",
+			"brand": "Lotus Cars",
+			"brandLogo": "lotus-logo.png",
+			"model": "Lotus Evora 400",
+			"year": "2021",
+			"kms": "9500",
+			"price": "80000",
+			"highlighted": true,
+			"imageUrl": "lotus-evora-400.jpg",
+			"chassis": {
+				"class": "Sports car (S)",
+				"body": "2-door coupé",
+				"weight": "1,442 kg"
+			},
+			"powertrain": {
+				"engine": "3.5 L Toyota 2GR-FE supercharged V6",
+				"powerOutput": "298 kW (406 PS; 400 hp)",
+				"transmission": "6-speed Aisin AI IPS automatic"
 			}
 		}
 	]
