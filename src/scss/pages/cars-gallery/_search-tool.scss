@@ -6,6 +6,7 @@ article.search-tool {
 		border-radius: 8px;
 		background-color: $bg-primary;
 		color: $color-primary;
+		box-shadow: $shadow-box;
 
 		& .filters {
 			display: flex;

@@ -1,10 +1,20 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import Button from '../../UI/Button';
+import { getUniqueBrands } from '../carsGallerySlice';
 
 export default function SearchTool() {
+	let dispatch = useDispatch();
+	const { filteredCars, uniqueBrands } = useSelector((state) => state.cars);
+
+	const [selectedBrand, setSelectedBrand] = useState('');
 	const [price, setPrice] = useState('');
 	let minPrice = '40000';
 	let maxPrice = '900000';
+
+	useEffect(() => {
+		dispatch(getUniqueBrands(filteredCars));
+	}, [dispatch, filteredCars]);
 
 	return (
 		<article className='search-tool'>
@@ -15,10 +25,16 @@ export default function SearchTool() {
 						<label htmlFor='brand' className='uppercase-text'>
 							Marca
 						</label>
-						<select id='brand'>
+						<select
+							id='brand'
+							onChange={({ target: { value } }) => setSelectedBrand(value)}
+						>
 							<option value=''>-- Marca --</option>
-							<option value='Ferrari'>Ferrari</option>
-							<option value='Lamborghini'>Lamborghini</option>
+							{uniqueBrands.map(({ brand }, idx) => (
+								<option key={idx} value={brand}>
+									{brand}
+								</option>
+							))}
 						</select>
 					</div>
 					<div className='form-control'>
@@ -27,8 +43,11 @@ export default function SearchTool() {
 						</label>
 						<select id='model'>
 							<option value=''>-- Modelo --</option>
-							<option value='488 GTB'>488 GTB</option>
-							<option value='Huracán'>Huracán</option>
+							{filteredCars.map(({ id, model }) => (
+								<option key={id} value={model}>
+									{model}
+								</option>
+							))}
 						</select>
 					</div>
 					<div className='form-control'>
@@ -37,8 +56,11 @@ export default function SearchTool() {
 						</label>
 						<select id='class'>
 							<option value=''>-- Segmento --</option>
-							<option value='Sports car (S)'>Sports car (S)</option>
-							<option value='Crossover SUV'>Crossover SUV</option>
+							{filteredCars.map(({ id, chassis }) => (
+								<option key={id} value={chassis.class}>
+									{chassis.class}
+								</option>
+							))}
 						</select>
 					</div>
 					<div className='form-control'>
@@ -47,8 +69,11 @@ export default function SearchTool() {
 						</label>
 						<select id='year'>
 							<option value=''>-- Ano --</option>
-							<option value='2023'>2023</option>
-							<option value='2022'>2022</option>
+							{filteredCars.map(({ id, year }) => (
+								<option key={id} value={year}>
+									{year}
+								</option>
+							))}
 						</select>
 					</div>
 				</div>
@@ -62,7 +87,7 @@ export default function SearchTool() {
 						step={'5000'}
 						min={`${minPrice}`}
 						max={`${maxPrice}`}
-						defaultValue={maxPrice}
+						// defaultValue={maxPrice}
 						onChange={({ target: { value } }) => setPrice(value)}
 					/>
 				</div>

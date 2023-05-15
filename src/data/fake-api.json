@@ -54,7 +54,7 @@
 		},
 		{
 			"id": "1683207286606",
-			"brand": "Lamborghini ",
+			"brand": "Lamborghini",
 			"brandLogo": "lamborghini-logo.png",
 			"model": "Aventador",
 			"year": "2011",
@@ -75,7 +75,7 @@
 		},
 		{
 			"id": "1683888069246",
-			"brand": "Bugatti ",
+			"brand": "Bugatti",
 			"brandLogo": "bugatti-logo.png",
 			"model": "Chiron",
 			"year": "2016",
@@ -118,7 +118,7 @@
 		{
 			"id": "1683818276230",
 			"brand": "Lamborghini",
-			"brandLogo": "ferrari-logo.png",
+			"brandLogo": "lamborghini-logo.png",
 			"model": "Huracán",
 			"year": "2014",
 			"kms": "47000",
