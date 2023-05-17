@@ -1,20 +1,29 @@
 import { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import Button from '../../UI/Button';
-import { getUniqueBrands } from '../carsGallerySlice';
 
 export default function SearchTool() {
-	let dispatch = useDispatch();
-	const { filteredCars, uniqueBrands } = useSelector((state) => state.cars);
+	const { filteredCars } = useSelector((state) => state.cars);
 
 	const [selectedBrand, setSelectedBrand] = useState('');
-	const [price, setPrice] = useState('');
-	let minPrice = '40000';
-	let maxPrice = '900000';
+	const [selectedPrice, setSelectedPrice] = useState('');
+	// const [minPrice, setMinPrice] = useState('');
+	// const [maxPrice, setMaxPrice] = useState('');
+
+	let uniqueBrands = [...new Set(filteredCars.map((car) => car.brand))];
+	let uniqueModels = [...new Set(filteredCars.map((car) => car.model))];
+	let uniqueClasses = [
+		...new Set(filteredCars.map((car) => car.chassis.class)),
+	];
+	let uniqueYears = [...new Set(filteredCars.map((car) => car.year))];
+
+	let currentCarsPrices = filteredCars.map((car) => car.price);
+	let minPrice = Math.min(...currentCarsPrices);
+	let maxPrice = Math.max(...currentCarsPrices);
 
 	useEffect(() => {
-		dispatch(getUniqueBrands(filteredCars));
-	}, [dispatch, filteredCars]);
+		setSelectedPrice(maxPrice);
+	}, [maxPrice]);
 
 	return (
 		<article className='search-tool'>
@@ -30,7 +39,7 @@ export default function SearchTool() {
 							onChange={({ target: { value } }) => setSelectedBrand(value)}
 						>
 							<option value=''>-- Marca --</option>
-							{uniqueBrands.map(({ brand }, idx) => (
+							{uniqueBrands.map((brand, idx) => (
 								<option key={idx} value={brand}>
 									{brand}
 								</option>
@@ -43,8 +52,8 @@ export default function SearchTool() {
 						</label>
 						<select id='model'>
 							<option value=''>-- Modelo --</option>
-							{filteredCars.map(({ id, model }) => (
-								<option key={id} value={model}>
+							{uniqueModels.map((model, idx) => (
+								<option key={idx} value={model}>
 									{model}
 								</option>
 							))}
@@ -56,9 +65,9 @@ export default function SearchTool() {
 						</label>
 						<select id='class'>
 							<option value=''>-- Segmento --</option>
-							{filteredCars.map(({ id, chassis }) => (
-								<option key={id} value={chassis.class}>
-									{chassis.class}
+							{uniqueClasses.map((chassisClass, idx) => (
+								<option key={idx} value={chassisClass}>
+									{chassisClass}
 								</option>
 							))}
 						</select>
@@ -69,8 +78,8 @@ export default function SearchTool() {
 						</label>
 						<select id='year'>
 							<option value=''>-- Ano --</option>
-							{filteredCars.map(({ id, year }) => (
-								<option key={id} value={year}>
+							{uniqueYears.map((year, idx) => (
+								<option key={idx} value={year}>
 									{year}
 								</option>
 							))}
@@ -79,16 +88,16 @@ export default function SearchTool() {
 				</div>
 				<div className='form-control price'>
 					<label htmlFor='price' className='uppercase-text'>
-						Preço ({`${minPrice}€ - ${price}€`})
+						Preço ({`${minPrice}€ - ${selectedPrice}€`})
 					</label>
 					<input
 						type='range'
 						id='price'
 						step={'5000'}
+						value={`${selectedPrice}`}
 						min={`${minPrice}`}
 						max={`${maxPrice}`}
-						// defaultValue={maxPrice}
-						onChange={({ target: { value } }) => setPrice(value)}
+						onChange={({ target: { value } }) => setSelectedPrice(value)}
 					/>
 				</div>
 				<Button>Pesquisar Veículos</Button>
