@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
 import Card from '../../../features/UI/Card';
 import LoaderCircle from '../../../features/UI/LoaderCircle';
-import HighlightedCar from './HighlightedCar';
+import Car from '../../Cars-Gallery/Car';
 
 export default function HighlightsGallery() {
 	const { highlights, loading } = useSelector((state) => state.cars);
@@ -9,18 +9,18 @@ export default function HighlightsGallery() {
 	const loaderCircle = <LoaderCircle />;
 
 	const carsList = (
-		<div className='gallery-wrapper'>
+		<div className='highlights-wrapper'>
 			{highlights.map((car) => (
 				<Card key={car.id}>
-					<HighlightedCar car={car} />
+					<Car car={car} />
 				</Card>
 			))}
 		</div>
 	);
 
 	return (
-		<article className='gallery'>
-			<h1>Destaques</h1>
+		<article className='highlights-gallery'>
+			<h1 className='underline'>Destaques</h1>
 			{loading ? loaderCircle : carsList}
 		</article>
 	);

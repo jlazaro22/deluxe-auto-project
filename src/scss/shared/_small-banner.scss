@@ -1,0 +1,27 @@
+div.small-banner {
+	width: 100%;
+	height: 22vh;
+	padding-bottom: 1.25rem;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	background: linear-gradient(to left, #b7d3d9, #f1f5ec);
+
+	& .small-banner-title {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		& h1 {
+			margin-bottom: 0;
+			font-size: 1.5rem;
+			color: $bg-primary;
+			text-shadow: $shadow-text;
+
+			& span {
+				font-weight: bold;
+				color: $color-primary;
+			}
+		}
+	}
+}

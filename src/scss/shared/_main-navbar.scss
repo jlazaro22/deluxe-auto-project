@@ -10,6 +10,7 @@ nav.main-nav {
 
 	&.open {
 		background-color: $bg-primary;
+		box-shadow: 2px 0 4px $color-primary;
 
 		& .nav-container .logo {
 			color: $color-primary;
@@ -133,7 +134,7 @@ nav.main-nav {
 				justify-content: center; // to review
 				align-items: center;
 				gap: 4px;
-				font-size: 1.25rem;
+				font-size: 1.2rem;
 				color: $color-secondary;
 			}
 
@@ -166,6 +167,7 @@ nav.main-nav {
 
 		& li a {
 			font-weight: 500;
+			font-size: 1rem;
 			text-shadow: $shadow-text;
 		}
 	}

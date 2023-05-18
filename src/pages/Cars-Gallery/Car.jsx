@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-export default function HighlightedCar({ car }) {
+export default function Car({ car }) {
 	let { brand, model, kms, year, imageUrl } = car;
 
 	return (

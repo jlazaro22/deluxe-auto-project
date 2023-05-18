@@ -1,5 +1,5 @@
-article.highlights-gallery {
-	& div.highlights-wrapper {
+article.cars-stock {
+	& div.stock-wrapper {
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
 		gap: 20px;

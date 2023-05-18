@@ -27,7 +27,7 @@ export default function SearchTool() {
 
 	return (
 		<article className='search-tool'>
-			<h1>Pesquisa</h1>
+			<h1 className='underline'>Pesquisa</h1>
 			<form className='search-tool-form'>
 				<div className='filters'>
 					<div className='form-control'>

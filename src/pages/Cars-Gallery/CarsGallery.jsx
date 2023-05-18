@@ -1,3 +1,11 @@
+import MainHeader from '../../features/main-header/MainHeader';
+import Gallery from './Gallery';
+
 export default function CarsGallery() {
-	return <div>CarsGallery</div>;
+	return (
+		<section className='cars-gallery'>
+			<MainHeader />
+			<Gallery />
+		</section>
+	);
 }

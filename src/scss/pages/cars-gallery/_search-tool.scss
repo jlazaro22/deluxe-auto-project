@@ -15,7 +15,7 @@ article.search-tool {
 		}
 
 		& .form-control {
-			flex: 1 1 300px;
+			flex: 1 1 265px;
 
 			& label {
 				margin-bottom: 8px;
@@ -26,7 +26,7 @@ article.search-tool {
 			& select,
 			& input {
 				width: 100%;
-				padding: 12px;
+				padding: 8px;
 				border-radius: 8px;
 				outline-color: $color-secondary;
 				box-shadow: $shadow-box;

@@ -101,27 +101,27 @@
 		padding: $padding-tablet;
 	}
 
-	h1:not(.main-banner-title h1) {
+	h1 {
 		font-size: 1.5rem;
 	}
 
-	h2:not(.main-banner-title h1) {
+	h2 {
 		font-size: 1.4rem;
 	}
 
-	h3:not(.main-banner-title h1) {
+	h3 {
 		font-size: 1.3rem;
 	}
 
-	h4:not(.main-banner-title h1) {
+	h4 {
 		font-size: 1.2rem;
 	}
 
-	h5:not(.main-banner-title h1) {
+	h5 {
 		font-size: 1.1rem;
 	}
 
-	h6:not(.main-banner-title h1) {
+	h6 {
 		font-size: 1rem;
 	}
 
@@ -162,27 +162,27 @@
 		padding: $padding-desktop;
 	}
 
-	h1:not(.main-banner-title h1) {
+	h1 {
 		font-size: 1.6rem;
 	}
 
-	h2:not(.main-banner-title h1) {
+	h2 {
 		font-size: 1.5rem;
 	}
 
-	h3:not(.main-banner-title h1) {
+	h3 {
 		font-size: 1.4rem;
 	}
 
-	h4:not(.main-banner-title h1) {
+	h4 {
 		font-size: 1.3rem;
 	}
 
-	h5:not(.main-banner-title h1) {
+	h5 {
 		font-size: 1.2rem;
 	}
 
-	h6:not(.main-banner-title h1) {
+	h6 {
 		font-size: 1.1rem;
 	}
 
@@ -215,13 +215,18 @@
 
 // bigger screens - gallery grid layout 2col
 @media (min-width: 1200px) {
+	// .container {
+	// 	padding: 40px 15%;
+	// }
+
 	section.highlights {
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
-		gap: 40px;
+		// grid-template-columns: repeat(5, 20%);
+		gap: 20px;
 
-		& article.gallery {
-			& div.gallery-wrapper {
+		& article.highlights-gallery {
+			& div.highlights-wrapper {
 				display: grid;
 				grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
 				gap: 10px;

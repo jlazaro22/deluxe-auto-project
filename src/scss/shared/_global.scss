@@ -31,12 +31,36 @@ a {
 }
 
 /* Headers */
-h1:not(.main-banner-title h1),
-h2:not(.main-banner-title h1),
-h3:not(.main-banner-title h1),
-h4:not(.main-banner-title h1),
-h5:not(.main-banner-title h1),
-h6:not(.main-banner-title h1) {
+h1 {
+	font-size: 1.4rem;
+}
+
+h2 {
+	font-size: 1.3rem;
+}
+
+h3 {
+	font-size: 1.2rem;
+}
+
+h4 {
+	font-size: 1.1rem;
+}
+
+h5 {
+	font-size: 1rem;
+}
+
+h6 {
+	font-size: 0.9rem;
+}
+
+h1.underline,
+h2.underline,
+h3.underline,
+h4.underline,
+h5.underline,
+h6.underline {
 	margin-bottom: 1.5rem;
 	position: relative;
 	display: inline-block;
@@ -45,12 +69,12 @@ h6:not(.main-banner-title h1) {
 	text-shadow: $shadow-text;
 }
 
-h1:not(.main-banner-title h1)::before,
-h2:not(.main-banner-title h1)::before,
-h3:not(.main-banner-title h1)::before,
-h4:not(.main-banner-title h1)::before,
-h5:not(.main-banner-title h1)::before,
-h6:not(.main-banner-title h1)::before {
+h1.underline::before,
+h2.underline::before,
+h3.underline::before,
+h4.underline::before,
+h5.underline::before,
+h6.underline::before {
 	content: '';
 	width: 50%;
 	height: 2px;
@@ -60,30 +84,6 @@ h6:not(.main-banner-title h1)::before {
 	border-radius: 8px;
 	transform: translateX(-50%);
 	background-color: $bg-secondary;
-}
-
-h1:not(.main-banner-title h1) {
-	font-size: 1.4rem;
-}
-
-h2:not(.main-banner-title h1) {
-	font-size: 1.3rem;
-}
-
-h3:not(.main-banner-title h1) {
-	font-size: 1.2rem;
-}
-
-h4:not(.main-banner-title h1) {
-	font-size: 1.1rem;
-}
-
-h5:not(.main-banner-title h1) {
-	font-size: 1rem;
-}
-
-h6:not(.main-banner-title h1) {
-	font-size: 0.9rem;
 }
 
 article {
