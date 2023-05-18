@@ -1,3 +1,7 @@
 export default function Contacts() {
-	return <div>Contacts</div>;
+	return (
+		<>
+			<h1 className='underline'>Contacts</h1>
+		</>
+	);
 }

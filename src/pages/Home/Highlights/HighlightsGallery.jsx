@@ -6,8 +6,6 @@ import Car from '../../Cars-Gallery/Car';
 export default function HighlightsGallery() {
 	const { highlights, loading } = useSelector((state) => state.cars);
 
-	const loaderCircle = <LoaderCircle />;
-
 	const carsList = (
 		<div className='highlights-wrapper'>
 			{highlights.map((car) => (
@@ -21,7 +19,8 @@ export default function HighlightsGallery() {
 	return (
 		<article className='highlights-gallery'>
 			<h1 className='underline'>Destaques</h1>
-			{loading ? loaderCircle : carsList}
+			{loading && <LoaderCircle />}
+			{!loading && carsList}
 		</article>
 	);
 }
