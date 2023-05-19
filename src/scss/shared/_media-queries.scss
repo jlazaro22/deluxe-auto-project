@@ -215,14 +215,9 @@
 
 // bigger screens - gallery grid layout 2col
 @media (min-width: 1200px) {
-	// .container {
-	// 	padding: 40px 15%;
-	// }
-
 	section.highlights {
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
-		// grid-template-columns: repeat(5, 20%);
 		gap: 20px;
 
 		& article.highlights-gallery {
