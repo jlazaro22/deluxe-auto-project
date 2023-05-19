@@ -45,11 +45,11 @@ export default function Footer() {
 					</p>
 					<p>
 						<BsDoorOpen />
-						<div className='schedule-wrapper'>
+						<span className='schedule-wrapper'>
 							<span>Segunda - Sexta: 9h:00 - 18h:00</span>
 							<span>Sábado: 9h:00 - 13h:00</span>
 							<span>Domingo: Fechado</span>
-						</div>
+						</span>
 					</p>
 				</article>
 			</section>
