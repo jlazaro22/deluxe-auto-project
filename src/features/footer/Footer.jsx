@@ -88,8 +88,10 @@ export default function Footer() {
 			</section>
 
 			<section className='footer-newsletter'>
-				<h4>Subscreva a Newsletter</h4>
-				<p>Fique a par das nossas novidades.</p>
+				<header>
+					<h4>Subscreva a Newsletter</h4>
+					<p>Fique a par das nossas novidades.</p>
+				</header>
 				<form>
 					<div className='form-control'>
 						<label htmlFor='news-email' className='uppercase-text'>
@@ -100,12 +102,17 @@ export default function Footer() {
 					<div className='form-control'>
 						<input type='checkbox' className='rgpd-chk' id='rgpd-chk' />
 						<label htmlFor='rgpd-chk'>
-							Ao selecionar esta opção, declara que conhece a nossa Política de
-							Privacidade e que consente que sejam utilizados os seus dados
-							pessoais de acordo com a mesma.
+							Ao selecionar esta opção, declara que conhece a nossa{' '}
+							<a href='#'>Política de Privacidade</a> e que consente que sejam
+							utilizados os seus dados pessoais de acordo com a mesma.
 						</label>
 					</div>
 				</form>
+			</section>
+			<section className='copyright'>
+				<p>
+					&copy; Copyright 2023 DeluxeAuto by joaolazaro.dev - Fins Académicos
+				</p>
 			</section>
 		</footer>
 	);

@@ -1,7 +1,7 @@
 /* Media Queries */
 
 // MainNavBar styles for Tablets and Desktop
-@media (min-width: 769px) {
+@media screen and (min-width: 769px) {
 	nav.main-nav {
 		flex-direction: row;
 		justify-content: space-between;
@@ -70,8 +70,24 @@
 	}
 }
 
+// Footer styles for big screens
+@media screen and (min-width: 1300px) {
+	footer {
+		grid-template-areas:
+			'one one three'
+			'two two three'
+			'four four four';
+
+		& section.footer-newsletter {
+			form {
+				padding: 0 10%;
+			}
+		}
+	}
+}
+
 // small screens
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	.container {
 		padding: $padding-mobile;
 	}
@@ -92,7 +108,7 @@
 }
 
 // medium screens
-@media (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
 	article {
 		margin-bottom: 25px;
 	}
@@ -153,7 +169,7 @@
 }
 
 // big screens
-@media (min-width: 993px) {
+@media screen and (min-width: 993px) {
 	article {
 		margin-bottom: 30px;
 	}
@@ -214,7 +230,7 @@
 }
 
 // bigger screens - gallery grid layout 2col
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
 	section.highlights {
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
