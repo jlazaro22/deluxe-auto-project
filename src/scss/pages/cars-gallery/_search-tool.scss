@@ -23,14 +23,14 @@ article.search-tool {
 				text-shadow: $shadow-text;
 			}
 
-			& select,
-			& input {
-				width: 100%;
-				padding: 8px;
-				border-radius: 8px;
-				outline-color: $color-secondary;
-				box-shadow: $shadow-box;
-			}
+			// & select,
+			// & input {
+			// width: 100%;
+			// padding: 8px;
+			// border-radius: 8px;
+			// outline-color: $color-secondary;
+			// box-shadow: $shadow-box;
+			// }
 		}
 
 		& .form-control.price {

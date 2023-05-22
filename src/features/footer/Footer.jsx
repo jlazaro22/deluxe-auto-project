@@ -81,7 +81,12 @@ export default function Footer() {
 						<a href='#'>Política de Privacidade</a>
 						<a href='#'>Política de Cookies</a>
 					</div>
-					<a href='#' className='claims'>
+					<a
+						href='https://www.livroreclamacoes.pt/INICIO/'
+						target='_blank'
+						rel='noreferrer'
+						className='claims'
+					>
 						<img src={claims} alt='livro de reclamações logo' />
 					</a>
 				</article>

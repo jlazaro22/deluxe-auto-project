@@ -13,7 +13,7 @@ footer {
 
 	& a {
 		color: inherit;
-		transition: color 0.3s ease-in-out;
+		transition: color 0.25s ease-out;
 
 		&:hover,
 		&:active {
@@ -157,6 +157,8 @@ footer {
 			& div.form-control:first-child {
 				display: flex;
 				flex-direction: column;
+				background-color: $bg-primary;
+				color: $color-primary;
 			}
 
 			& div.form-control:last-child {
@@ -165,6 +167,10 @@ footer {
 					height: 1.25rem;
 					margin-right: 8px;
 					accent-color: $bg-secondary;
+					cursor: pointer;
+				}
+
+				& label {
 					cursor: pointer;
 				}
 			}
