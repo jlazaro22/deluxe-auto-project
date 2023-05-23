@@ -33,8 +33,8 @@ const carsGallerySlice = createSlice({
       .addCase(getCars.fulfilled, (state, action) => {
         state.loading = false;
         state.cars = action.payload;
-        state.filteredCars = state.cars;
-        state.highlights = state.cars.filter(car => car.highlighted === true);
+        state.filteredCars = action.payload;
+        state.highlights = action.payload.filter(car => car.highlighted === true);
       })
       .addCase(getCars.rejected, (state, action) => {
         state.loading = false;
@@ -43,5 +43,5 @@ const carsGallerySlice = createSlice({
   }
 });
 
-export const { getUniqueBrands } = carsGallerySlice.actions;
+// export const { } = carsGallerySlice.actions;
 export default carsGallerySlice.reducer;

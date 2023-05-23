@@ -19,9 +19,23 @@ export default function Footer() {
 						<img src={pageLogo} alt='deluxe auto logo' />
 					</Link>
 					<div className='footer-social-links-wrapper'>
-						<IoLogoFacebook />
-						<IoLogoInstagram />
-						<IoLogoTwitter />
+						<a
+							href='https://www.facebook.com/'
+							target='_blank'
+							rel='noreferrer'
+						>
+							<IoLogoFacebook />
+						</a>
+						<a
+							href='https://www.instagram.com/'
+							target='_blank'
+							rel='noreferrer'
+						>
+							<IoLogoInstagram />
+						</a>
+						<a href='https://twitter.com' target='_blank' rel='noreferrer'>
+							<IoLogoTwitter />
+						</a>
 					</div>
 				</article>
 

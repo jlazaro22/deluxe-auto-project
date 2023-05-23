@@ -26,8 +26,8 @@ footer {
 	}
 
 	& svg {
-		width: 1.25rem;
-		height: 1.25rem;
+		width: 1.5rem;
+		height: 1.5rem;
 		display: inline-block;
 		color: $color-primary;
 	}
@@ -61,6 +61,13 @@ footer {
 
 				& svg {
 					color: white;
+					transition: all 0.25s ease-out;
+				}
+
+				& svg:hover,
+				& svg:active {
+					color: $color-primary;
+					transform: scale(1.1);
 				}
 			}
 		}
@@ -159,6 +166,10 @@ footer {
 				flex-direction: column;
 				background-color: $bg-primary;
 				color: $color-primary;
+
+				& label {
+					margin-bottom: 4px;
+				}
 			}
 
 			& div.form-control:last-child {
