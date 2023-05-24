@@ -24,6 +24,24 @@ const carsGallerySlice = createSlice({
   name: 'cars',
   initialState,
   reducers: {
+    filterByBrand: (state, action) => {
+      state.filteredCars = state.cars.filter(car => car.brand === action.payload);
+    },
+    filterByModel: (state, action) => {
+      state.filteredCars = state.cars.filter(car => car.model === action.payload);
+    },
+    filterByClass: (state, action) => {
+      state.filteredCars = state.cars.filter(car => car.chassis.class === action.payload);
+    },
+    filterByYear: (state, action) => {
+      state.filteredCars = state.cars.filter(car => car.year === action.payload);
+    },
+    filterByPrice: (state, action) => {
+      state.filteredCars = state.cars.filter(car => +car.price <= +action.payload);
+    },
+    clearAllFilters: (state) => {
+      state.filteredCars = state.cars;
+    }
   },
   extraReducers: (builder) => {
     builder
@@ -43,5 +61,5 @@ const carsGallerySlice = createSlice({
   }
 });
 
-// export const { } = carsGallerySlice.actions;
+export const { filterByBrand, filterByModel, filterByClass, filterByYear, filterByPrice, clearAllFilters } = carsGallerySlice.actions;
 export default carsGallerySlice.reducer;

@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 export default function Car({ car }) {
-	let { brand, model, kms, year, imageUrl } = car;
+	let { brand, model, price, kms, year, imageUrl } = car;
 
 	return (
 		<>
@@ -9,6 +9,7 @@ export default function Car({ car }) {
 					{brand} {model}
 				</span>
 				<span>{kms} Kms</span>
+				<span>{price} €</span>
 				<span>{year}</span>
 			</div>
 			<img
