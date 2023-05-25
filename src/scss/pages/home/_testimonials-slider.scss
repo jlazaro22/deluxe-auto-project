@@ -1,0 +1,29 @@
+section.testimonials-slider {
+	height: 38vh;
+	& article.testimonials {
+		margin-bottom: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 3rem;
+
+		& header {
+			text-align: center;
+		}
+
+		& div.testimonials-wrapper {
+			& div.testimonial-info {
+				padding: 0 15%;
+
+				& svg {
+					width: 2rem;
+					height: 2rem;
+				}
+
+				& img {
+					width: 100px;
+				}
+			}
+		}
+	}
+}

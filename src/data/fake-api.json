@@ -220,5 +220,13 @@
 				"transmission": "6-speed Aisin AI IPS automatic"
 			}
 		}
+	],
+	"testimonials": [
+		{
+			"id": "1685036414320",
+			"rate": "5",
+			"name": "António",
+			"comment": "Serviço de excelência. Veículos em excelente estado. Recomendo vivamente a Deluxe Auto."
+		}
 	]
 }

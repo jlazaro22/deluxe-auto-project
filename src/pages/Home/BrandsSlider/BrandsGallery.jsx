@@ -10,7 +10,6 @@ export default function BrandsGallery({ brandLogos }) {
 		gap: '2rem',
 		type: 'loop',
 		arrows: false,
-		// perPage: 3,
 		autoScroll: {
 			speed: 0.3,
 		},
@@ -18,8 +17,10 @@ export default function BrandsGallery({ brandLogos }) {
 
 	return (
 		<article className='brands-gallery'>
-			<h1>As Nossas Marcas</h1>
-			<p>As melhores marcas à sua disposição</p>
+			<header>
+				<h1>As Nossas Marcas</h1>
+				<h4>As melhores marcas à sua disposição</h4>
+			</header>
 			<div className='splide-wrapper'>
 				<Splide options={options} extensions={{ AutoScroll }}>
 					{brandLogos.map((logoUrl, idx) => (
