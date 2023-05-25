@@ -1,0 +1,22 @@
+section.brands-slider {
+	background-color: $bg-primary;
+
+	& article.brands-gallery {
+		text-align: center;
+
+		& h1 {
+			color: $color-primary;
+		}
+
+		& p {
+			color: #eee;
+		}
+
+		& div.splide-wrapper {
+			margin: 60px 0;
+			& img.brand-logo {
+				height: 100px;
+			}
+		}
+	}
+}

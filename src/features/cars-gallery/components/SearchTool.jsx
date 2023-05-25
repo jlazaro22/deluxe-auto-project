@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Button from '../../UI/Button';
 import {
-	filterByPrice,
+	// filterByPrice,
 	filterByBrand,
 	filterByClass,
 	filterByModel,
