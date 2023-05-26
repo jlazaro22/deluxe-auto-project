@@ -21,11 +21,14 @@
 
 		& .menu {
 			max-height: none;
+			height: 100%;
 			padding-top: 40px;
 			flex-direction: row;
 			overflow: visible;
 
 			& li {
+				min-width: 120px;
+
 				& a,
 				& span {
 					padding: 5px 10px;
@@ -53,19 +56,23 @@
 				}
 			}
 		}
-	}
 
-	.sub-menu {
-		position: absolute;
-		right: 20px;
-		display: flex;
+		.sub-menu {
+			margin-top: 8px;
+			position: absolute;
+			right: 20px;
+			display: flex;
+			background-color: rgba(255, 255, 255, 0.5);
+			border-radius: 8px;
 
-		& li {
-			font-size: 0.85rem;
-		}
+			& li {
+				min-width: 220px;
+				font-size: 0.85rem;
+			}
 
-		& li:hover {
-			font-weight: 700;
+			& li:hover {
+				font-weight: 700;
+			}
 		}
 	}
 }
