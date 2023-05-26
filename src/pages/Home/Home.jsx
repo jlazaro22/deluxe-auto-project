@@ -1,7 +1,8 @@
 import MainHeaderHome from '../../features/main-header/MainHeaderHome';
 import Highlights from './Highlights/Highlights';
 import BrandsSlider from './BrandsSlider/BrandsSlider';
-import TestimonialsSlider from './Testimonials/TestimonialsSlider';
+import TestimonialsSlider from '../../features/Testimonials/components/TestimonialsSlider';
+import Footer from '../../features/footer/Footer';
 
 export default function Home() {
 	return (
@@ -10,6 +11,7 @@ export default function Home() {
 			<Highlights />
 			<BrandsSlider />
 			<TestimonialsSlider />
+			<Footer />
 		</>
 	);
 }

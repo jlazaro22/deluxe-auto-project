@@ -1,28 +1,55 @@
 section.testimonials-slider {
-	height: 38vh;
+	height: 40vh;
+	min-height: 40vh;
+
 	& article.testimonials {
+		height: 100%;
 		margin-bottom: 0;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 3rem;
+		gap: 2rem;
 
 		& header {
 			text-align: center;
 		}
 
 		& div.testimonials-wrapper {
+			width: 100%;
+			height: 100%;
+			background-color: #eee;
+			border-radius: 8px;
+
 			& div.testimonial-info {
-				padding: 0 15%;
+				padding: 1rem 15%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 2rem;
 
-				& svg {
-					width: 2rem;
-					height: 2rem;
+				header {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+
+					& svg {
+						width: 1.5rem;
+						height: 1.5rem;
+						display: inline-block;
+					}
+
+					& img {
+						width: 80px;
+					}
 				}
 
-				& img {
-					width: 100px;
+				& p q {
+					display: block;
 				}
+			}
+
+			& ul.splide__pagination {
+				bottom: -1em;
 			}
 		}
 	}

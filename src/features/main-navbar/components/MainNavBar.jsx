@@ -29,7 +29,10 @@ export default function MainNavBar() {
 			<ul className='sub-menu'>
 				{children.map((child, idx) => (
 					<li key={idx}>
-						<NavLink to={child.url} onClick={(e) => closeMenu(e, true)}>
+						<NavLink
+							to={`/pages${child.url}`}
+							onClick={(e) => closeMenu(e, true)}
+						>
 							{child.name}
 						</NavLink>
 					</li>
@@ -42,7 +45,7 @@ export default function MainNavBar() {
 		return mainNavBarItems.map((item, idx) => (
 			<li key={idx}>
 				{item.url ? (
-					<NavLink to={item.url} onClick={(e) => closeMenu(e)}>
+					<NavLink to={`/pages${item.url}`} onClick={(e) => closeMenu(e)}>
 						{item.name}
 					</NavLink>
 				) : (

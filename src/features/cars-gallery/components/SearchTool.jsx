@@ -37,7 +37,7 @@ export default function SearchTool() {
 		setMinPrice(Math.min(...cars.map((car) => car.price)));
 		setMaxPrice(Math.max(...cars.map((car) => car.price)));
 		setSelectedPrice(maxPrice);
-	}, [cars, maxPrice]);
+	}, [cars, dispatch, maxPrice]);
 
 	const handleSelectedBrand = (brand) => {
 		if (brand.trim().length !== 0 && cars.find((car) => car.brand === brand)) {
@@ -69,7 +69,7 @@ export default function SearchTool() {
 			// 		...cars.filter((car) => car.brand === brand).map((car) => car.price)
 			// 	)
 			// );
-			console.log(minPrice, maxPrice);
+			// console.log(minPrice, maxPrice);
 			// setSelectedPrice(maxPrice);
 		} else {
 			setSelectedBrand('');
@@ -175,20 +175,20 @@ export default function SearchTool() {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
+		if (!selectedBrand && !selectedModel && !selectedClass && !selectedYear) {
+			dispatch(clearAllFilters());
+		}
 		selectedBrand && dispatch(filterByBrand(selectedBrand));
 		selectedModel && dispatch(filterByModel(selectedModel));
 		selectedClass && dispatch(filterByClass(selectedClass));
 		selectedYear && dispatch(filterByYear(selectedYear));
 		// console.log(selectedPrice, minPrice, maxPrice);
 		// selectedPrice && dispatch(filterByPrice(selectedPrice));
-		if (!selectedBrand && !selectedModel && !selectedClass && !selectedYear) {
-			dispatch(clearAllFilters());
-		}
 		setSelectedBrand('');
 		setSelectedModel('');
 		setSelectedClass('');
 		setSelectedYear('');
-		navigate('/cars-gallery');
+		navigate('/pages/cars-gallery');
 	};
 
 	return (

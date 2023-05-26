@@ -227,6 +227,30 @@
 			"rate": "5",
 			"name": "António",
 			"comment": "Serviço de excelência. Veículos em excelente estado. Recomendo vivamente a Deluxe Auto."
+		},
+		{
+			"id": "1685036414321",
+			"rate": "3",
+			"name": "Joaquim",
+			"comment": "Muito satisfeito. Alguma demora na entrega."
+		},
+		{
+			"id": "1685036414322",
+			"rate": "4",
+			"name": "Aurélio",
+			"comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam perspiciatis quos ad animi voluptate eveniet?"
+		},
+		{
+			"id": "1685036414323",
+			"rate": "5",
+			"name": "Ricardo",
+			"comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam perspiciatis quos ad animi voluptate eveniet?"
+		},
+		{
+			"id": "1685036414324",
+			"rate": "4",
+			"name": "Isabel",
+			"comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam perspiciatis quos ad animi voluptate eveniet?"
 		}
 	]
 }
