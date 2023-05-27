@@ -9,11 +9,13 @@ import {
 	filterByYear,
 	clearAllFilters,
 } from '../carsGallerySlice';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 export default function SearchTool() {
 	const { cars } = useSelector((state) => state.cars);
 	let dispatch = useDispatch();
+	let params = useParams();
+	console.log(params);
 	let navigate = useNavigate();
 
 	const [uniqueBrands, setUniqueBrands] = useState([]);
@@ -184,11 +186,19 @@ export default function SearchTool() {
 		selectedYear && dispatch(filterByYear(selectedYear));
 		// console.log(selectedPrice, minPrice, maxPrice);
 		// selectedPrice && dispatch(filterByPrice(selectedPrice));
+		// navigate('/pages/cars-gallery');
+		navigate(
+			`/pages/cars-gallery/
+			${selectedBrand ? selectedBrand + '/' : ''}
+			${selectedModel ? selectedModel + '/' : ''}
+			${selectedClass ? selectedClass + '/' : ''}
+			${selectedYear ? selectedYear + '/' : ''}
+			`
+		);
 		setSelectedBrand('');
 		setSelectedModel('');
 		setSelectedClass('');
 		setSelectedYear('');
-		navigate('/pages/cars-gallery');
 	};
 
 	return (

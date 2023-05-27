@@ -12,6 +12,7 @@ import VehicleEvaluation from './pages/VehicleEvaluation';
 import Warranty from './pages/Warranty';
 import AboutUs from './pages/AboutUs';
 import Contacts from './pages/Contacts';
+import NotFound from './pages/NotFound';
 
 export default function App() {
 	let dispatch = useDispatch();
@@ -29,12 +30,17 @@ export default function App() {
 				<Route path='/pages' element={<Pages />}>
 					<Route index element={<CarsGallery />} />
 					<Route path='cars-gallery' element={<CarsGallery />} />
+					<Route
+						path='cars-gallery/:brand?/:model?/:chassisClass?/:year?'
+						element={<CarsGallery />}
+					/>
 					<Route path='services/credit-sim' element={<Financing />} />
 					<Route path='services/market-value' element={<VehicleEvaluation />} />
 					<Route path='services/warranty' element={<Warranty />} />
 					<Route path='about-us' element={<AboutUs />} />
 					<Route path='contact-us' element={<Contacts />} />
 				</Route>
+				<Route path='*' element={<NotFound />} />
 			</Routes>
 		</>
 	);

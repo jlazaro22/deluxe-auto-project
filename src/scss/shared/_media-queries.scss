@@ -34,6 +34,16 @@
 					padding: 5px 10px;
 				}
 
+				& span + .sub-menu {
+					padding: 0;
+					transform-origin: top;
+					transition: padding 0.1s ease-in-out;
+				}
+
+				& span.toggled + .sub-menu {
+					padding: 10px;
+				}
+
 				& a:active,
 				& span:active,
 				& a:hover,
@@ -60,14 +70,24 @@
 		.sub-menu {
 			margin-top: 8px;
 			position: absolute;
-			right: 20px;
+			// right: 20px;
 			display: flex;
-			background-color: rgba(255, 255, 255, 0.5);
+			flex-direction: column;
+			background-color: rgba(55, 65, 81, 1);
 			border-radius: 8px;
 
 			& li {
-				min-width: 220px;
+				min-width: 225px;
 				font-size: 0.85rem;
+
+				& a {
+					color: $color-primary;
+				}
+
+				& a:active,
+				& a.active {
+					background-color: rgba(92, 108, 133, 0.5);
+				}
 			}
 
 			& li:hover {
