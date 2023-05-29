@@ -1,3 +1,6 @@
+import { useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
+import emailjs from '@emailjs/browser';
 import pageLogo from '/images/pictures/page-logo/page-logo.svg';
 import claims from '/images/pictures/livro-reclamacoes/livro-reclamacoes.png';
 import {
@@ -8,9 +11,33 @@ import {
 	IoLocationOutline,
 } from 'react-icons/io5';
 import { BsEnvelopeAt, BsDoorOpen } from 'react-icons/bs';
-import { Link } from 'react-router-dom';
+import Button from '../UI/Button';
 
 export default function Footer() {
+	let form = useRef();
+	const [newsEmail, setNewsEmail] = useState('');
+	const [isPolicyChecked, setIsPolicyChecked] = useState(false);
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+
+		emailjs
+			.sendForm(
+				`${import.meta.env.VITE_EMAILJS_SERVICE_ID}`,
+				`${import.meta.env.VITE_EMAILJS_NEWSLETTER_TEMPLATE_ID}`,
+				form.current,
+				`${import.meta.env.VITE_EMAILJS_PUBLIC_KEY}`
+			)
+			.then(
+				(result) => {
+					console.log(result.text);
+				},
+				(error) => {
+					console.log(error.text);
+				}
+			);
+	};
+
 	return (
 		<footer className='container'>
 			<section className='footer-util-info'>
@@ -115,21 +142,40 @@ export default function Footer() {
 					<h4>Subscreva a Newsletter</h4>
 					<p>Fique a par das nossas novidades.</p>
 				</header>
-				<form>
+				<form ref={form} onSubmit={handleSubmit}>
 					<div className='form-control'>
 						<label htmlFor='news-email' className='uppercase-text'>
 							E-Mail
 						</label>
-						<input type='email' id='news-email' placeholder='E-mail' />
+						<input
+							type='email'
+							id='news-email'
+							name='user_email'
+							placeholder='E-mail'
+							value={newsEmail}
+							onChange={({ target: { value } }) => setNewsEmail(value)}
+						/>
 					</div>
 					<div className='form-control'>
-						<input type='checkbox' className='rgpd-chk' id='rgpd-chk' />
+						<input
+							type='checkbox'
+							className='rgpd-chk'
+							id='rgpd-chk'
+							value={isPolicyChecked}
+							onChange={() => setIsPolicyChecked((checked) => !checked)}
+						/>
 						<label htmlFor='rgpd-chk'>
 							Ao selecionar esta opção, declara que conhece a nossa{' '}
 							<a href='#'>Política de Privacidade</a> e que consente que sejam
 							utilizados os seus dados pessoais de acordo com a mesma.
 						</label>
 					</div>
+					<Button
+						type='submit'
+						disabled={!newsEmail.trim() || !isPolicyChecked}
+					>
+						Subscrever
+					</Button>
 				</form>
 			</section>
 			<section className='copyright'>

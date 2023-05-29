@@ -134,12 +134,20 @@ button.btn:active {
 	transform: translateY(-1px);
 	box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 }
+
 button.btn:active {
 	background-color: #fdb466;
 }
 
 button.btn:focus {
 	outline: none;
+}
+
+button.btn:disabled {
+	transform: none;
+	background-color: #dddddd;
+	color: #a5a4a4;
+	cursor: not-allowed;
 }
 
 /* Cards */

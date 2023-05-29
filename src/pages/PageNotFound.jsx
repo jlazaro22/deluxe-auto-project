@@ -17,9 +17,8 @@ export default function PageNotFound() {
 				<div className='content'>
 					<img src={ferrariSunset} alt='Ferrari testarrossa at sunset' />
 					<p>
-						Não foi possível mostrar a página que seleccionou. Pode tentar fazer
-						um &quot;refresh&quot; no &quot;browser&quot; ou voltar à página
-						anterior por favor.
+						Não foi possível mostrar a página que seleccionou. Por favor tente
+						novamente mais tarde ou volte à página anterior.
 					</p>
 					<Button onClick={() => navigate(-1)}>Voltar Atrás</Button>
 				</div>
