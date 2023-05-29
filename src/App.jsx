@@ -11,8 +11,8 @@ import Financing from './pages/Financing';
 import VehicleEvaluation from './pages/VehicleEvaluation';
 import Warranty from './pages/Warranty';
 import AboutUs from './pages/AboutUs';
-import Contacts from './pages/Contacts';
-import NotFound from './pages/NotFound';
+import Contacts from './pages/Contacts/Contacts';
+import PageNotFound from './pages/PageNotFound';
 
 export default function App() {
 	let dispatch = useDispatch();
@@ -40,7 +40,7 @@ export default function App() {
 					<Route path='about-us' element={<AboutUs />} />
 					<Route path='contact-us' element={<Contacts />} />
 				</Route>
-				<Route path='*' element={<NotFound />} />
+				<Route path='*' element={<PageNotFound />} />
 			</Routes>
 		</>
 	);

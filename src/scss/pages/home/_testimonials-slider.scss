@@ -14,10 +14,14 @@ section.testimonials-slider {
 			text-align: center;
 		}
 
+		& h4 {
+			text-shadow: none;
+		}
+
 		& div.testimonials-wrapper {
 			width: 100%;
 			height: 100%;
-			background-color: #eee;
+			background-color: #f3f1f1;
 			border-radius: 8px;
 
 			& div.testimonial-info {

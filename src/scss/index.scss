@@ -19,12 +19,10 @@
 /* main header */
 @import './shared/main-header';
 
-/* home page */
-@import './pages/home/home';
+/* pages */
+@import './pages/pages';
 
-/* cars-gallery page */
-@import './pages/cars-gallery/cars-gallery';
-
+/* footer */
 @import './shared/footer';
 
 /* media queries */

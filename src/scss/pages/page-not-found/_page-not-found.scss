@@ -1,0 +1,29 @@
+section.page-not-found {
+	& article.page-info {
+		& header {
+			text-align: center;
+		}
+
+		& div.content {
+			max-width: 500px;
+			margin: 0 auto;
+			text-align: center;
+			// display: flex;
+			// flex-direction: column;
+			// align-items: center;
+			// gap: 40px;
+
+			& img {
+				margin-bottom: 20px;
+				display: inline-block;
+				border-radius: 4px;
+			}
+
+			& p {
+				color: $color-secondary;
+				font-weight: 500;
+				margin-bottom: 40px;
+			}
+		}
+	}
+}

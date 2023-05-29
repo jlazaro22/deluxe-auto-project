@@ -77,15 +77,19 @@ export default function Footer() {
 					<div className='usefull'>
 						<h4>Links Úteis</h4>
 						<Link to={'/'}>Início</Link>
-						<Link to={'/cars-gallery'}>Veículos</Link>
-						<Link to={'/about-us'}>Sobre Nós</Link>
-						<Link to={'/contact-us'}>Contactos</Link>
+						<Link to={'/pages/cars-gallery'}>Veículos</Link>
+						<Link to={'/pages/about-us'}>Sobre Nós</Link>
+						<Link to={'/pages/contact-us'}>Contactos</Link>
 					</div>
 					<div className='services'>
 						<h4>Serviços</h4>
-						<Link to={'/services/credit-sim'}>Soluções de Financiamento</Link>
-						<Link to={'/services/market-value'}>Avalie o seu veículo</Link>
-						<Link to={'/services/warranty'}>Garantia PósVenda</Link>
+						<Link to={'/pages/services/credit-sim'}>
+							Soluções de Financiamento
+						</Link>
+						<Link to={'/pages/services/market-value'}>
+							Avalie o seu veículo
+						</Link>
+						<Link to={'/pages/services/warranty'}>Garantia PósVenda</Link>
 					</div>
 				</article>
 

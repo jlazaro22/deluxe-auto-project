@@ -30,7 +30,7 @@ export default function Testimonials({ testimonials, loading }) {
 										<BsChatSquareText />
 										<h4>{name}</h4>
 										<img
-											src={`/images/stars-rate/stars-rate-${rate}.png`}
+											src={`/images/UI/stars-rate/stars-rate-${rate}.png`}
 											alt={rate}
 										/>
 									</header>
