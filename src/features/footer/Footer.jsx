@@ -12,6 +12,7 @@ import {
 } from 'react-icons/io5';
 import { BsEnvelopeAt, BsDoorOpen } from 'react-icons/bs';
 import Button from '../UI/Button';
+import { toast } from 'react-toastify';
 
 export default function Footer() {
 	let form = useRef();
@@ -28,14 +29,17 @@ export default function Footer() {
 				form.current,
 				`${import.meta.env.VITE_EMAILJS_PUBLIC_KEY}`
 			)
-			.then(
-				(result) => {
-					console.log(result.text);
-				},
-				(error) => {
-					console.log(error.text);
-				}
-			);
+			.then((result) => {
+				console.log(result.text);
+				toast.success('Enviado! Obrigado.');
+			})
+			.catch((error) => {
+				console.log(error.text);
+				toast.error('Erro! Tente novamente por favor.');
+			});
+
+		setNewsEmail('');
+		setIsPolicyChecked(false);
 	};
 
 	return (
@@ -152,6 +156,7 @@ export default function Footer() {
 							id='news-email'
 							name='user_email'
 							placeholder='E-mail'
+							required
 							value={newsEmail}
 							onChange={({ target: { value } }) => setNewsEmail(value)}
 						/>

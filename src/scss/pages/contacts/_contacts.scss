@@ -1,0 +1,59 @@
+section.contacts-page {
+	& article.contacts {
+		& header {
+			text-align: center;
+			margin-bottom: 40px;
+		}
+
+		& form.contact-form {
+			margin-bottom: 40px;
+			padding: 40px;
+			border-radius: 8px;
+			background-color: $bg-primary;
+			box-shadow: $shadow-box;
+
+			& div.form-control {
+				margin-bottom: 20px;
+				& label {
+					margin-bottom: 8px;
+					display: block;
+					color: $color-primary;
+					text-shadow: $shadow-text;
+				}
+
+				& textarea {
+					width: 100%;
+					padding: 8px;
+					font-family: inherit;
+					border-radius: 8px;
+					resize: none;
+				}
+			}
+
+			& div.form-control:nth-child(4) {
+				display: flex;
+
+				& input[type='checkbox'] {
+					width: 1.25rem;
+					height: 1.25rem;
+					margin-right: 8px;
+					accent-color: $bg-secondary;
+					cursor: pointer;
+				}
+
+				& label {
+					color: white;
+					cursor: pointer;
+
+					& a:visited {
+						color: $color-primary;
+					}
+				}
+			}
+
+			& button {
+				display: flex;
+			}
+		}
+	}
+}

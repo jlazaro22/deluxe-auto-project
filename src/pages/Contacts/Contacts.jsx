@@ -1,7 +1,11 @@
+import ContactForm from './ContactForm';
+import MapAddress from './MapAddress';
+
 export default function Contacts() {
 	return (
-		<>
-			<h1 className='underline'>Contactos</h1>
-		</>
+		<section className='contacts-page container'>
+			<ContactForm />
+			<MapAddress />
+		</section>
 	);
 }

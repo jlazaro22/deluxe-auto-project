@@ -9,13 +9,13 @@ import {
 	filterByYear,
 	clearAllFilters,
 } from '../carsGallerySlice';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export default function SearchTool() {
 	const { cars } = useSelector((state) => state.cars);
 	let dispatch = useDispatch();
-	let params = useParams();
-	console.log(params);
+	// let params = useParams();
+	// console.log(params);
 	let navigate = useNavigate();
 
 	const [uniqueBrands, setUniqueBrands] = useState([]);

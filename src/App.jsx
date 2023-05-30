@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
+import { Route, Routes } from 'react-router-dom';
 import { getMainNavBarItems } from './features/main-navbar/mainNavbarItemsSlice';
 import { getCars } from './features/cars-gallery/carsGallerySlice';
 import { getTestimonials } from './features/Testimonials/testimonialsSlice';
-import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Pages from './pages/Pages';
 import CarsGallery from './pages/Cars-Gallery/CarsGallery';
@@ -13,6 +13,8 @@ import Warranty from './pages/Warranty';
 import AboutUs from './pages/AboutUs';
 import Contacts from './pages/Contacts/Contacts';
 import PageNotFound from './pages/PageNotFound';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function App() {
 	let dispatch = useDispatch();
@@ -25,6 +27,7 @@ export default function App() {
 
 	return (
 		<>
+			<ToastContainer />
 			<Routes>
 				<Route path='/' element={<Home />} />
 				<Route path='/pages' element={<Pages />}>
