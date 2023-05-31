@@ -55,7 +55,7 @@ footer {
 				height: 140px;
 			}
 
-			& div.footer-social-links-wrapper {
+			& ul.footer-social-links {
 				display: flex;
 				gap: 10px;
 
@@ -72,24 +72,24 @@ footer {
 			}
 		}
 
-		& article.footer-contacts {
+		& ul.footer-contacts {
 			display: flex;
 			flex-direction: column;
 			gap: 4px;
 
-			& p {
+			& li {
 				display: flex;
 				align-items: center;
 				gap: 8px;
 			}
 		}
 
-		& article.footer-address {
+		& ul.footer-address {
 			display: flex;
 			flex-direction: column;
 			gap: 4px;
 
-			& p {
+			& li {
 				display: flex;
 				gap: 8px;
 
@@ -131,7 +131,7 @@ footer {
 			display: flex;
 			gap: 40px;
 
-			& div.policys {
+			& ul.policys {
 				display: flex;
 				flex-direction: column;
 				gap: 4px;

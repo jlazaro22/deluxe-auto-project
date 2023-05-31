@@ -186,15 +186,15 @@ export default function SearchTool() {
 		selectedYear && dispatch(filterByYear(selectedYear));
 		// console.log(selectedPrice, minPrice, maxPrice);
 		// selectedPrice && dispatch(filterByPrice(selectedPrice));
-		// navigate('/pages/cars-gallery');
-		navigate(
-			`/pages/cars-gallery/
-			${selectedBrand ? selectedBrand + '/' : ''}
-			${selectedModel ? selectedModel + '/' : ''}
-			${selectedClass ? selectedClass + '/' : ''}
-			${selectedYear ? selectedYear + '/' : ''}
-			`
-		);
+		navigate('/pages/cars-gallery');
+		// navigate(
+		// 	`/pages/cars-gallery/
+		// 	${selectedBrand ? selectedBrand + '/' : ''}
+		// 	${selectedModel ? selectedModel + '/' : ''}
+		// 	${selectedClass ? selectedClass + '/' : ''}
+		// 	${selectedYear ? selectedYear + '/' : ''}
+		// 	`
+		// );
 		setSelectedBrand('');
 		setSelectedModel('');
 		setSelectedClass('');

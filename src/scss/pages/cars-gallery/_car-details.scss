@@ -1,0 +1,62 @@
+section.car-details {
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	& div.car-details-wrapper {
+		& div.car-details-gallery {
+			& div.thumbnail-gallery-wrapper {
+				background-color: #333;
+
+				& div#thumbnails-splide {
+					& .splide__slide {
+						opacity: 0.6;
+					}
+
+					& .splide__slide.is-active {
+						opacity: 1;
+						border: 2px solid $bg-secondary;
+					}
+				}
+			}
+		}
+
+		& div.car-details-info {
+			margin: 20px 0;
+			padding: 20px;
+			background-color: $bg-primary;
+
+			& h4 {
+				margin-bottom: 8px;
+				color: $color-primary;
+			}
+
+			& li {
+				margin: 4px;
+				position: relative;
+				display: grid;
+				grid-template-columns: 1fr 2fr;
+				gap: 10px;
+				color: $color-primary;
+
+				& span {
+					color: white;
+				}
+			}
+
+			& li::before {
+				content: '';
+				width: 100%;
+				height: 2px;
+				position: absolute;
+				left: 50%;
+				bottom: -2px;
+				transform: translateX(-50%);
+				border-radius: 50%;
+				background-color: $bg-secondary;
+			}
+		}
+	}
+}

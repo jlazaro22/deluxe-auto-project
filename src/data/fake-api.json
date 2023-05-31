@@ -41,6 +41,15 @@
 			"price": "3100000",
 			"highlighted": false,
 			"imageUrl": "ferrari-laferrari.jpg",
+			"imagesGallery": [
+				"ferrari-laferrari.jpg",
+				"1980x1024_image_placeholder-1.jpg",
+				"1980x1024_image_placeholder-2.jpg",
+				"1980x1024_image_placeholder-3.jpg",
+				"1980x1024_image_placeholder-4.jpg",
+				"1980x1024_image_placeholder-5.jpg",
+				"1980x1024_image_placeholder-6.jpg"
+			],
 			"chassis": {
 				"class": "Sports car (S)",
 				"body": "2-door coupé",
@@ -62,6 +71,15 @@
 			"price": "820000",
 			"highlighted": false,
 			"imageUrl": "lamborghini-aventador.jpg",
+			"imagesGallery": [
+				"lamborghini-aventador.jpg",
+				"1980x1024_image_placeholder-1.jpg",
+				"1980x1024_image_placeholder-2.jpg",
+				"1980x1024_image_placeholder-3.jpg",
+				"1980x1024_image_placeholder-4.jpg",
+				"1980x1024_image_placeholder-5.jpg",
+				"1980x1024_image_placeholder-6.jpg"
+			],
 			"chassis": {
 				"class": "Sports car (S)",
 				"body": "2-door coupé",
@@ -83,6 +101,15 @@
 			"price": "2600000",
 			"highlighted": false,
 			"imageUrl": "bugatti-chiron.jpg",
+			"imagesGallery": [
+				"bugatti-chiron.jpg",
+				"1980x1024_image_placeholder-1.jpg",
+				"1980x1024_image_placeholder-2.jpg",
+				"1980x1024_image_placeholder-3.jpg",
+				"1980x1024_image_placeholder-4.jpg",
+				"1980x1024_image_placeholder-5.jpg",
+				"1980x1024_image_placeholder-6.jpg"
+			],
 			"chassis": {
 				"class": "Sports car (S)",
 				"body": "2-door coupé",
@@ -104,6 +131,15 @@
 			"price": "260000",
 			"highlighted": true,
 			"imageUrl": "ferrari-488-gtb.jpg",
+			"imagesGallery": [
+				"ferrari-488-gtb.jpg",
+				"1980x1024_image_placeholder-1.jpg",
+				"1980x1024_image_placeholder-2.jpg",
+				"1980x1024_image_placeholder-3.jpg",
+				"1980x1024_image_placeholder-4.jpg",
+				"1980x1024_image_placeholder-5.jpg",
+				"1980x1024_image_placeholder-6.jpg"
+			],
 			"chassis": {
 				"class": "Sports car (S)",
 				"body": "2-door berlinetta",
@@ -125,6 +161,15 @@
 			"price": "300000",
 			"highlighted": true,
 			"imageUrl": "lamborghini-huracan.jpg",
+			"imagesGallery": [
+				"lamborghini-huracan.jpg",
+				"1980x1024_image_placeholder-1.jpg",
+				"1980x1024_image_placeholder-2.jpg",
+				"1980x1024_image_placeholder-3.jpg",
+				"1980x1024_image_placeholder-4.jpg",
+				"1980x1024_image_placeholder-5.jpg",
+				"1980x1024_image_placeholder-6.jpg"
+			],
 			"chassis": {
 				"class": "Sports car (S)",
 				"body": "2-door coupé",
@@ -146,6 +191,15 @@
 			"price": "125000",
 			"highlighted": true,
 			"imageUrl": "porsche-992.jpg",
+			"imagesGallery": [
+				"porsche-992.jpg",
+				"1980x1024_image_placeholder-1.jpg",
+				"1980x1024_image_placeholder-2.jpg",
+				"1980x1024_image_placeholder-3.jpg",
+				"1980x1024_image_placeholder-4.jpg",
+				"1980x1024_image_placeholder-5.jpg",
+				"1980x1024_image_placeholder-6.jpg"
+			],
 			"chassis": {
 				"class": "Sports car (S)",
 				"body": "2-door coupé",
@@ -167,6 +221,15 @@
 			"price": "170000",
 			"highlighted": true,
 			"imageUrl": "maseratti-gran-turismo.jpg",
+			"imagesGallery": [
+				"maseratti-gran-turismo.jpg",
+				"1980x1024_image_placeholder-1.jpg",
+				"1980x1024_image_placeholder-2.jpg",
+				"1980x1024_image_placeholder-3.jpg",
+				"1980x1024_image_placeholder-4.jpg",
+				"1980x1024_image_placeholder-5.jpg",
+				"1980x1024_image_placeholder-6.jpg"
+			],
 			"chassis": {
 				"class": "Grand tourer (S)",
 				"body": "2-door 2+2 coupé",
@@ -188,6 +251,15 @@
 			"price": "325000",
 			"highlighted": true,
 			"imageUrl": "mercedesbenz-gt-amg.jpg",
+			"imagesGallery": [
+				"mercedesbenz-gt-amg.jpg",
+				"1980x1024_image_placeholder-1.jpg",
+				"1980x1024_image_placeholder-2.jpg",
+				"1980x1024_image_placeholder-3.jpg",
+				"1980x1024_image_placeholder-4.jpg",
+				"1980x1024_image_placeholder-5.jpg",
+				"1980x1024_image_placeholder-6.jpg"
+			],
 			"chassis": {
 				"class": "Grand tourer (S)",
 				"body": "2-door liftback/fastback coupé",
@@ -209,6 +281,15 @@
 			"price": "80000",
 			"highlighted": true,
 			"imageUrl": "lotus-evora-400.jpg",
+			"imagesGallery": [
+				"lotus-evora-400.jpg",
+				"1980x1024_image_placeholder-1.jpg",
+				"1980x1024_image_placeholder-2.jpg",
+				"1980x1024_image_placeholder-3.jpg",
+				"1980x1024_image_placeholder-4.jpg",
+				"1980x1024_image_placeholder-5.jpg",
+				"1980x1024_image_placeholder-6.jpg"
+			],
 			"chassis": {
 				"class": "Sports car (S)",
 				"body": "2-door coupé",

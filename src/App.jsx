@@ -16,6 +16,7 @@ import PageNotFound from './pages/PageNotFound';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import CarDetails from './pages/Cars-Gallery/CarDetails';
+import '@splidejs/react-splide/css';
 
 export default function App() {
 	let dispatch = useDispatch();

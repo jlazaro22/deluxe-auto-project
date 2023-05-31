@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import { BsChatSquareText } from 'react-icons/bs';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
-import '@splidejs/react-splide/css';
 import LoaderCircle from '../../UI/LoaderCircle';
 
 export default function Testimonials({ testimonials, loading }) {

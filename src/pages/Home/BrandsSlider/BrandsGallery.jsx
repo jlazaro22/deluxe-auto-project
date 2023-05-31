@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
-import '@splidejs/react-splide/css';
 
 export default function BrandsGallery({ brandLogos }) {
 	const options = {

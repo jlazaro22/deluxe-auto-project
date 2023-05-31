@@ -49,87 +49,111 @@ export default function Footer() {
 					<Link to={'/'}>
 						<img src={pageLogo} alt='deluxe auto logo' />
 					</Link>
-					<div className='footer-social-links-wrapper'>
-						<a
-							href='https://www.facebook.com/'
-							target='_blank'
-							rel='noreferrer'
-						>
-							<IoLogoFacebook />
-						</a>
-						<a
-							href='https://www.instagram.com/'
-							target='_blank'
-							rel='noreferrer'
-						>
-							<IoLogoInstagram />
-						</a>
-						<a href='https://twitter.com' target='_blank' rel='noreferrer'>
-							<IoLogoTwitter />
-						</a>
-					</div>
+					<ul className='footer-social-links'>
+						<li>
+							<a
+								href='https://www.facebook.com/'
+								target='_blank'
+								rel='noreferrer'
+							>
+								<IoLogoFacebook />
+							</a>
+						</li>
+						<li>
+							<a
+								href='https://www.instagram.com/'
+								target='_blank'
+								rel='noreferrer'
+							>
+								<IoLogoInstagram />
+							</a>
+						</li>
+						<li>
+							<a href='https://twitter.com' target='_blank' rel='noreferrer'>
+								<IoLogoTwitter />
+							</a>
+						</li>
+					</ul>
 				</article>
 
-				<article className='footer-contacts'>
-					<p>
+				<ul className='footer-contacts'>
+					<li>
 						<IoCallOutline />
 						<a href='tel:+351200000000'>+351 200 000 000</a>
-					</p>
-					<p>
+					</li>
+					<li>
 						<IoCallOutline />
 						<a href='tel:+351900000000'>+351 900 000 000</a>
-					</p>
-					<p>
+					</li>
+					<li>
 						<BsEnvelopeAt />
 						<a href='mailto:clientes@deluxeauto.blabla'>
 							clientes@deluxeauto.blabla
 						</a>
-					</p>
-				</article>
+					</li>
+				</ul>
 
-				<article className='footer-address'>
-					<p>
+				<ul className='footer-address'>
+					<li>
 						<IoLocationOutline />
 						<span>Rua Deluxe, 999 - Lisboa, Portugal</span>
-					</p>
-					<p>
+					</li>
+					<li>
 						<BsDoorOpen />
 						<span className='schedule-wrapper'>
 							<span>Segunda - Sexta: 9h:00 - 18h:00</span>
 							<span>Sábado: 9h:00 - 13h:00</span>
 							<span>Domingo: Fechado</span>
 						</span>
-					</p>
-				</article>
+					</li>
+				</ul>
 			</section>
 
 			<section className='footer-quickaccess'>
 				<article className='footer-sitemap'>
-					<div className='usefull'>
+					<ul className='usefull'>
 						<h4>Links Úteis</h4>
-						<Link to={'/'}>Início</Link>
-						<Link to={'/pages/cars-gallery'}>Veículos</Link>
-						<Link to={'/pages/about-us'}>Sobre Nós</Link>
-						<Link to={'/pages/contact-us'}>Contactos</Link>
-					</div>
-					<div className='services'>
+						<li>
+							<Link to={'/'}>Início</Link>
+						</li>
+						<li>
+							<Link to={'/pages/cars-gallery'}>Veículos</Link>
+						</li>
+						<li>
+							<Link to={'/pages/about-us'}>Sobre Nós</Link>
+						</li>
+						<li>
+							<Link to={'/pages/contact-us'}>Contactos</Link>
+						</li>
+					</ul>
+					<ul className='services'>
 						<h4>Serviços</h4>
-						<Link to={'/pages/services/credit-sim'}>
-							Soluções de Financiamento
-						</Link>
-						<Link to={'/pages/services/market-value'}>
-							Avalie o seu veículo
-						</Link>
-						<Link to={'/pages/services/warranty'}>Garantia PósVenda</Link>
-					</div>
+						<li>
+							<Link to={'/pages/services/credit-sim'}>
+								Soluções de Financiamento
+							</Link>
+						</li>
+						<li>
+							<Link to={'/pages/services/market-value'}>
+								Avalie o seu veículo
+							</Link>
+						</li>
+						<li>
+							<Link to={'/pages/services/warranty'}>Garantia PósVenda</Link>
+						</li>
+					</ul>
 				</article>
 
 				<article className='footer-policys'>
-					<div className='policys'>
+					<ul className='policys'>
 						<h4>Privacidade</h4>
-						<a href='#'>Política de Privacidade</a>
-						<a href='#'>Política de Cookies</a>
-					</div>
+						<li>
+							<a href='#'>Política de Privacidade</a>
+						</li>
+						<li>
+							<a href='#'>Política de Cookies</a>
+						</li>
+					</ul>
 					<a
 						href='https://www.livroreclamacoes.pt/INICIO/'
 						target='_blank'

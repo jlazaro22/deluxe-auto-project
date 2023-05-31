@@ -254,6 +254,26 @@
 			}
 		}
 	}
+
+	section.car-details {
+		& div.car-details-wrapper {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 20px;
+
+			& div.car-details-gallery {
+				grid-column: span 2;
+			}
+
+			& div.car-details-info {
+				margin: 0;
+
+				& li {
+					margin: 8px;
+				}
+			}
+		}
+	}
 }
 
 // bigger screens - gallery grid layout 2col
