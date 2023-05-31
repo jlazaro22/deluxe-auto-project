@@ -1,6 +1,13 @@
+import { Link } from 'react-router-dom';
+
 // eslint-disable-next-line react/prop-types
-export default function Card({ children, className }) {
+export default function Card({ children, className, carId }) {
 	return (
-		<div className={`card${className ? ' ' + className : ''}`}>{children}</div>
+		<Link
+			to={`/pages/car-details/${carId}`}
+			className={`card${className ? ' ' + className : ''}`}
+		>
+			{children}
+		</Link>
 	);
 }

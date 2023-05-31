@@ -13,7 +13,7 @@ export default function HighlightsGallery() {
 			{!loading && (
 				<div className='highlights-wrapper'>
 					{highlights.map((car) => (
-						<Card key={car.id}>
+						<Card key={car.id} carId={car.id}>
 							<Car car={car} />
 						</Card>
 					))}

@@ -13,7 +13,7 @@ export default function CarsStock() {
 			{!loading && (
 				<div className='stock-wrapper'>
 					{filteredCars.map((car) => (
-						<Card key={car.id}>
+						<Card key={car.id} carId={car.id}>
 							<Car car={car} />
 						</Card>
 					))}

@@ -15,6 +15,7 @@ import Contacts from './pages/Contacts/Contacts';
 import PageNotFound from './pages/PageNotFound';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import CarDetails from './pages/Cars-Gallery/CarDetails';
 
 export default function App() {
 	let dispatch = useDispatch();
@@ -33,10 +34,11 @@ export default function App() {
 				<Route path='/pages' element={<Pages />}>
 					<Route index element={<CarsGallery />} />
 					<Route path='cars-gallery' element={<CarsGallery />} />
-					<Route
+					<Route path='car-details/:id' element={<CarDetails />} />
+					{/* <Route
 						path='cars-gallery/:brand?/:model?/:chassisClass?/:year?'
 						element={<CarsGallery />}
-					/>
+					/> */}
 					<Route path='services/credit-sim' element={<Financing />} />
 					<Route path='services/market-value' element={<VehicleEvaluation />} />
 					<Route path='services/warranty' element={<Warranty />} />
