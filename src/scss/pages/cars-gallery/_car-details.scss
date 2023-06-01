@@ -39,10 +39,11 @@ section.car-details {
 				display: grid;
 				grid-template-columns: 1fr 2fr;
 				gap: 10px;
-				color: $color-primary;
+				color: white;
+				font-weight: 500;
 
 				& span {
-					color: white;
+					font-weight: 400;
 				}
 			}
 

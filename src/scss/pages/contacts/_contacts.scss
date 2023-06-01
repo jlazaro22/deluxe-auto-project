@@ -45,6 +45,7 @@ section.contacts-page {
 					color: white;
 					cursor: pointer;
 
+					& a,
 					& a:visited {
 						color: $color-primary;
 					}

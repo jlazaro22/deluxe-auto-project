@@ -183,6 +183,11 @@ footer {
 
 				& label {
 					cursor: pointer;
+
+					& a,
+					& a:visited {
+						color: $color-primary;
+					}
 				}
 			}
 		}

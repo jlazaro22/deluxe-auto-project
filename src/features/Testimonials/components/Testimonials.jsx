@@ -29,7 +29,9 @@ export default function Testimonials({ testimonials, loading }) {
 										<BsChatSquareText />
 										<h4>{name}</h4>
 										<img
-											src={`/images/UI/stars-rate/stars-rate-${rate}.png`}
+											src={`${
+												import.meta.env.VITE_BASE_URL
+											}/images/UI/stars-rate/stars-rate-${rate}.png`}
 											alt={rate}
 										/>
 									</header>
